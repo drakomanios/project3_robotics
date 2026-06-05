@@ -1,0 +1,61 @@
+[2.746s] Invoking command in '/mnt/c/Users/drako/university/robotic_systems_1/project/src/myarm_node': PYTHONPATH=/mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/myarm_node build --build-base /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build install --record /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/install.log --single-version-externally-managed install_data
+[4.127s] running egg_info
+[4.157s] creating ../build/myarm_node/myarm_node.egg-info
+[4.162s] writing ../build/myarm_node/myarm_node.egg-info/PKG-INFO
+[4.218s] writing dependency_links to ../build/myarm_node/myarm_node.egg-info/dependency_links.txt
+[4.231s] writing entry points to ../build/myarm_node/myarm_node.egg-info/entry_points.txt
+[4.260s] writing requirements to ../build/myarm_node/myarm_node.egg-info/requires.txt
+[4.274s] writing top-level names to ../build/myarm_node/myarm_node.egg-info/top_level.txt
+[4.299s] writing manifest file '../build/myarm_node/myarm_node.egg-info/SOURCES.txt'
+[4.584s] reading manifest file '../build/myarm_node/myarm_node.egg-info/SOURCES.txt'
+[4.866s] writing manifest file '../build/myarm_node/myarm_node.egg-info/SOURCES.txt'
+[4.878s] running build
+[4.881s] running build_py
+[4.888s] creating /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node
+[4.935s] copying myarm_node/myarm_controller.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node
+[4.973s] copying myarm_node/__init__.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node
+[5.008s] creating /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils
+[5.027s] copying myarm_node/myarm_utils/math_utils.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils
+[5.109s] copying myarm_node/myarm_utils/myarm_connect.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils
+[5.166s] copying myarm_node/myarm_utils/parameters.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils
+[5.242s] copying myarm_node/myarm_utils/poe_fkine.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils
+[5.306s] copying myarm_node/myarm_utils/poe_ikine.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils
+[5.343s] copying myarm_node/myarm_utils/SE3_utils.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils
+[5.402s] copying myarm_node/myarm_utils/solve_inv_kine.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils
+[5.453s] copying myarm_node/myarm_utils/__init__.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils
+[5.535s] copying myarm_node/py.typed -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node
+[5.602s] running install
+[5.609s] running install_lib
+[5.716s] creating /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node
+[5.761s] copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_controller.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node
+[5.835s] creating /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils
+[5.886s] copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/math_utils.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils
+[5.974s] copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/myarm_connect.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils
+[6.049s] copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/parameters.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils
+[6.134s] copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/poe_fkine.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils
+[6.210s] copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/poe_ikine.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils
+[6.296s] copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/SE3_utils.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils
+[6.377s] copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/solve_inv_kine.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils
+[6.471s] copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/__init__.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils
+[6.539s] copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/py.typed -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node
+[6.607s] copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/__init__.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node
+[6.653s] byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_controller.py to myarm_controller.cpython-314.pyc
+[6.738s] byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/math_utils.py to math_utils.cpython-314.pyc
+[6.828s] byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/myarm_connect.py to myarm_connect.cpython-314.pyc
+[6.917s] byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/parameters.py to parameters.cpython-314.pyc
+[7.030s] byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/poe_fkine.py to poe_fkine.cpython-314.pyc
+[7.172s] byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/poe_ikine.py to poe_ikine.cpython-314.pyc
+[7.343s] byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/SE3_utils.py to SE3_utils.cpython-314.pyc
+[7.525s] byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/solve_inv_kine.py to solve_inv_kine.cpython-314.pyc
+[7.671s] byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/__init__.py to __init__.cpython-314.pyc
+[7.797s] byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/__init__.py to __init__.cpython-314.pyc
+[7.930s] running install_data
+[7.983s] creating /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/share/ament_index/resource_index/packages
+[8.059s] copying resource/myarm_node -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/share/ament_index/resource_index/packages
+[8.127s] copying package.xml -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/share/myarm_node
+[8.166s] running install_egg_info
+[8.243s] Copying ../build/myarm_node/myarm_node.egg-info to /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node-0.0.0-py3.14.egg-info
+[9.080s] running install_scripts
+[9.660s] Installing talker script to /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/myarm_node
+[9.707s] writing list of installed files to '/mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/install.log'
+[9.787s] Invoked command in '/mnt/c/Users/drako/university/robotic_systems_1/project/src/myarm_node' returned '0': PYTHONPATH=/mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/myarm_node build --build-base /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build install --record /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/install.log --single-version-externally-managed install_data

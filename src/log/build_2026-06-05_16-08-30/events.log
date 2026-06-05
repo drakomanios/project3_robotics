@@ -1,0 +1,171 @@
+[0.000000] (-) TimerEvent: {}
+[0.000634] (-) JobUnselected: {'identifier': 'camera_node'}
+[0.001091] (myarm_node) JobQueued: {'identifier': 'myarm_node', 'dependencies': OrderedDict()}
+[0.001942] (myarm_node) JobStarted: {'identifier': 'myarm_node'}
+[0.118652] (-) TimerEvent: {}
+[0.222097] (-) TimerEvent: {}
+[0.323524] (-) TimerEvent: {}
+[0.424925] (-) TimerEvent: {}
+[0.525730] (-) TimerEvent: {}
+[0.628256] (-) TimerEvent: {}
+[0.728880] (-) TimerEvent: {}
+[0.829664] (-) TimerEvent: {}
+[0.930503] (-) TimerEvent: {}
+[1.031353] (-) TimerEvent: {}
+[1.132144] (-) TimerEvent: {}
+[1.233109] (-) TimerEvent: {}
+[1.334201] (-) TimerEvent: {}
+[1.435205] (-) TimerEvent: {}
+[1.536076] (-) TimerEvent: {}
+[1.637845] (-) TimerEvent: {}
+[1.741277] (-) TimerEvent: {}
+[1.841897] (-) TimerEvent: {}
+[1.942955] (-) TimerEvent: {}
+[2.043800] (-) TimerEvent: {}
+[2.144534] (-) TimerEvent: {}
+[2.245242] (-) TimerEvent: {}
+[2.346001] (-) TimerEvent: {}
+[2.446760] (-) TimerEvent: {}
+[2.547650] (-) TimerEvent: {}
+[2.650263] (-) TimerEvent: {}
+[2.752363] (-) TimerEvent: {}
+[2.849959] (myarm_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/myarm_node', 'build', '--build-base', '/mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build', 'install', '--record', '/mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/mnt/c/Users/drako/university/robotic_systems_1/project/src/myarm_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'drako', 'GIT_ASKPASS': '/home/drako/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/opt/gz_math_vendor/lib:/opt/ros/lyrical/opt/gz_utils_vendor/lib:/opt/ros/lyrical/opt/rviz_ogre_vendor/lib:/opt/ros/lyrical/lib/x86_64-linux-gnu:/opt/ros/lyrical/opt/gz_cmake_vendor/lib:/opt/ros/lyrical/lib', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'HOME': '/home/drako', 'OLDPWD': '/mnt/c/Users/drako/university/robotic_systems_1/project/src', 'TERM_PROGRAM_VERSION': '1.122.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b37c3d59-50a9-4967-b7b9-dabe704c1897.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/drako/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/extensions/git/dist/askpass-main.js', 'PS1': '\\[\x1b]633;A\x07\\]\\[\x1b]633;A\x07\\]\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \\[\x1b]633;B\x07\\]\\[\x1b]633;B\x07\\]', 'VSCODE_GIT_ASKPASS_NODE': '/home/drako/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-26.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'drako', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/948_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/lyrical/bin:/home/drako/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Users/drako/AppData/Roaming/Python/Python312/Scripts:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/CMake/bin:/mnt/c/ProgramData/MATLAB/SupportPackages/R2024a/3P.instrset/ev3sourcerylite.instrset/CodeSourcery/bin:/mnt/c/Users/drako/.cargo/bin:/mnt/c/Users/drako/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/drako/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/drako/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/drako/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/drako/.dotnet/tools:/mnt/c/intelFPGA/22.1std/questa_fse/win64:/mnt/c/Users/drako/AppData/Roaming/npm:/snap/bin', 'WT_SESSION': '3e9b7237-53a8-4c15-add1-8b1d5c2ee394', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-0c26a533ef.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages:/opt/ros/lyrical/opt/gz_math_vendor/lib/python:/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:'}, 'shell': False}
+[2.865103] (-) TimerEvent: {}
+[2.965747] (-) TimerEvent: {}
+[3.066610] (-) TimerEvent: {}
+[3.167399] (-) TimerEvent: {}
+[3.268206] (-) TimerEvent: {}
+[3.368860] (-) TimerEvent: {}
+[3.469511] (-) TimerEvent: {}
+[3.570266] (-) TimerEvent: {}
+[3.670913] (-) TimerEvent: {}
+[3.773991] (-) TimerEvent: {}
+[3.874793] (-) TimerEvent: {}
+[3.975563] (-) TimerEvent: {}
+[4.076442] (-) TimerEvent: {}
+[4.178393] (-) TimerEvent: {}
+[4.242106] (myarm_node) StdoutLine: {'line': b'running egg_info\n'}
+[4.274231] (myarm_node) StdoutLine: {'line': b'creating ../build/myarm_node/myarm_node.egg-info\n'}
+[4.278550] (-) TimerEvent: {}
+[4.279486] (myarm_node) StdoutLine: {'line': b'writing ../build/myarm_node/myarm_node.egg-info/PKG-INFO\n'}
+[4.335790] (myarm_node) StdoutLine: {'line': b'writing dependency_links to ../build/myarm_node/myarm_node.egg-info/dependency_links.txt\n'}
+[4.348512] (myarm_node) StdoutLine: {'line': b'writing entry points to ../build/myarm_node/myarm_node.egg-info/entry_points.txt\n'}
+[4.377164] (myarm_node) StdoutLine: {'line': b'writing requirements to ../build/myarm_node/myarm_node.egg-info/requires.txt\n'}
+[4.379210] (-) TimerEvent: {}
+[4.390641] (myarm_node) StdoutLine: {'line': b'writing top-level names to ../build/myarm_node/myarm_node.egg-info/top_level.txt\n'}
+[4.414907] (myarm_node) StdoutLine: {'line': b"writing manifest file '../build/myarm_node/myarm_node.egg-info/SOURCES.txt'\n"}
+[4.479457] (-) TimerEvent: {}
+[4.580983] (-) TimerEvent: {}
+[4.681796] (-) TimerEvent: {}
+[4.686168] (myarm_node) StdoutLine: {'line': b"reading manifest file '../build/myarm_node/myarm_node.egg-info/SOURCES.txt'\n"}
+[4.782522] (-) TimerEvent: {}
+[4.885268] (-) TimerEvent: {}
+[4.983272] (myarm_node) StdoutLine: {'line': b"writing manifest file '../build/myarm_node/myarm_node.egg-info/SOURCES.txt'\n"}
+[4.985443] (-) TimerEvent: {}
+[4.995058] (myarm_node) StdoutLine: {'line': b'running build\n'}
+[4.997664] (myarm_node) StdoutLine: {'line': b'running build_py\n'}
+[5.003507] (myarm_node) StdoutLine: {'line': b'creating /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node\n'}
+[5.051785] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_controller.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node\n'}
+[5.085642] (-) TimerEvent: {}
+[5.090447] (myarm_node) StdoutLine: {'line': b'copying myarm_node/__init__.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node\n'}
+[5.125214] (myarm_node) StdoutLine: {'line': b'creating /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[5.144648] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/math_utils.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[5.185957] (-) TimerEvent: {}
+[5.223527] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/myarm_connect.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[5.283014] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/parameters.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[5.286179] (-) TimerEvent: {}
+[5.352477] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/poe_fkine.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[5.386612] (-) TimerEvent: {}
+[5.423078] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/poe_ikine.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[5.460180] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/SE3_utils.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[5.486805] (-) TimerEvent: {}
+[5.518535] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/solve_inv_kine.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[5.570228] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/__init__.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[5.587688] (-) TimerEvent: {}
+[5.652248] (myarm_node) StdoutLine: {'line': b'copying myarm_node/py.typed -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node\n'}
+[5.689295] (-) TimerEvent: {}
+[5.719525] (myarm_node) StdoutLine: {'line': b'running install\n'}
+[5.725008] (myarm_node) StdoutLine: {'line': b'running install_lib\n'}
+[5.789724] (-) TimerEvent: {}
+[5.832035] (myarm_node) StdoutLine: {'line': b'creating /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node\n'}
+[5.875832] (myarm_node) StdoutLine: {'line': b'copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_controller.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node\n'}
+[5.891371] (-) TimerEvent: {}
+[5.951089] (myarm_node) StdoutLine: {'line': b'creating /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils\n'}
+[5.991551] (-) TimerEvent: {}
+[6.002113] (myarm_node) StdoutLine: {'line': b'copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/math_utils.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils\n'}
+[6.090863] (myarm_node) StdoutLine: {'line': b'copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/myarm_connect.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils\n'}
+[6.092516] (-) TimerEvent: {}
+[6.165707] (myarm_node) StdoutLine: {'line': b'copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/parameters.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils\n'}
+[6.192680] (-) TimerEvent: {}
+[6.250555] (myarm_node) StdoutLine: {'line': b'copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/poe_fkine.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils\n'}
+[6.293021] (-) TimerEvent: {}
+[6.327598] (myarm_node) StdoutLine: {'line': b'copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/poe_ikine.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils\n'}
+[6.393158] (-) TimerEvent: {}
+[6.413291] (myarm_node) StdoutLine: {'line': b'copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/SE3_utils.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils\n'}
+[6.493347] (-) TimerEvent: {}
+[6.494527] (myarm_node) StdoutLine: {'line': b'copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/solve_inv_kine.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils\n'}
+[6.588515] (myarm_node) StdoutLine: {'line': b'copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/myarm_utils/__init__.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils\n'}
+[6.593457] (-) TimerEvent: {}
+[6.656239] (myarm_node) StdoutLine: {'line': b'copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/py.typed -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node\n'}
+[6.693610] (-) TimerEvent: {}
+[6.723325] (myarm_node) StdoutLine: {'line': b'copying /mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/build/lib/myarm_node/__init__.py -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node\n'}
+[6.768989] (myarm_node) StdoutLine: {'line': b'byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_controller.py to myarm_controller.cpython-314.pyc\n'}
+[6.793745] (-) TimerEvent: {}
+[6.855366] (myarm_node) StdoutLine: {'line': b'byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/math_utils.py to math_utils.cpython-314.pyc\n'}
+[6.894386] (-) TimerEvent: {}
+[6.945199] (myarm_node) StdoutLine: {'line': b'byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/myarm_connect.py to myarm_connect.cpython-314.pyc\n'}
+[6.995003] (-) TimerEvent: {}
+[7.033934] (myarm_node) StdoutLine: {'line': b'byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/parameters.py to parameters.cpython-314.pyc\n'}
+[7.095362] (-) TimerEvent: {}
+[7.146570] (myarm_node) StdoutLine: {'line': b'byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/poe_fkine.py to poe_fkine.cpython-314.pyc\n'}
+[7.195712] (-) TimerEvent: {}
+[7.287875] (myarm_node) StdoutLine: {'line': b'byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/poe_ikine.py to poe_ikine.cpython-314.pyc\n'}
+[7.296014] (-) TimerEvent: {}
+[7.397616] (-) TimerEvent: {}
+[7.457372] (myarm_node) StdoutLine: {'line': b'byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/SE3_utils.py to SE3_utils.cpython-314.pyc\n'}
+[7.498374] (-) TimerEvent: {}
+[7.601095] (-) TimerEvent: {}
+[7.641926] (myarm_node) StdoutLine: {'line': b'byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/solve_inv_kine.py to solve_inv_kine.cpython-314.pyc\n'}
+[7.701568] (-) TimerEvent: {}
+[7.786189] (myarm_node) StdoutLine: {'line': b'byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/myarm_utils/__init__.py to __init__.cpython-314.pyc\n'}
+[7.802363] (-) TimerEvent: {}
+[7.903562] (-) TimerEvent: {}
+[7.914595] (myarm_node) StdoutLine: {'line': b'byte-compiling /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node/__init__.py to __init__.cpython-314.pyc\n'}
+[8.003823] (-) TimerEvent: {}
+[8.045976] (myarm_node) StdoutLine: {'line': b'running install_data\n'}
+[8.096822] (myarm_node) StdoutLine: {'line': b'creating /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/share/ament_index/resource_index/packages\n'}
+[8.104026] (-) TimerEvent: {}
+[8.175554] (myarm_node) StdoutLine: {'line': b'copying resource/myarm_node -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/share/ament_index/resource_index/packages\n'}
+[8.204439] (-) TimerEvent: {}
+[8.243309] (myarm_node) StdoutLine: {'line': b'copying package.xml -> /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/share/myarm_node\n'}
+[8.281817] (myarm_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.304656] (-) TimerEvent: {}
+[8.359093] (myarm_node) StdoutLine: {'line': b'Copying ../build/myarm_node/myarm_node.egg-info to /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/python3.14/site-packages/myarm_node-0.0.0-py3.14.egg-info\n'}
+[8.405181] (-) TimerEvent: {}
+[8.507053] (-) TimerEvent: {}
+[8.607795] (-) TimerEvent: {}
+[8.709967] (-) TimerEvent: {}
+[8.812234] (-) TimerEvent: {}
+[8.913388] (-) TimerEvent: {}
+[9.014614] (-) TimerEvent: {}
+[9.115559] (-) TimerEvent: {}
+[9.196504] (myarm_node) StdoutLine: {'line': b'running install_scripts\n'}
+[9.215758] (-) TimerEvent: {}
+[9.317737] (-) TimerEvent: {}
+[9.419493] (-) TimerEvent: {}
+[9.520245] (-) TimerEvent: {}
+[9.621641] (-) TimerEvent: {}
+[9.722628] (-) TimerEvent: {}
+[9.777427] (myarm_node) StdoutLine: {'line': b'Installing talker script to /mnt/c/Users/drako/university/robotic_systems_1/project/src/install/myarm_node/lib/myarm_node\n'}
+[9.822744] (-) TimerEvent: {}
+[9.823367] (myarm_node) StdoutLine: {'line': b"writing list of installed files to '/mnt/c/Users/drako/university/robotic_systems_1/project/src/build/myarm_node/install.log'\n"}
+[9.904288] (myarm_node) CommandEnded: {'returncode': 0}
+[9.922964] (-) TimerEvent: {}
+[10.024520] (-) TimerEvent: {}
+[10.125408] (-) TimerEvent: {}
+[10.226387] (-) TimerEvent: {}
+[10.327187] (-) TimerEvent: {}
+[10.427968] (-) TimerEvent: {}
+[10.513103] (myarm_node) JobEnded: {'identifier': 'myarm_node', 'rc': 0}
+[10.545347] (-) TimerEvent: {}
+[10.546007] (-) EventReactorShutdown: {}
