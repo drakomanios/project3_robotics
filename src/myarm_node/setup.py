@@ -25,7 +25,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-                'talker = myarm_node.myarm_controller:main',
+                'controller = myarm_node.myarm_controller:main',
         ],
 },
 )
