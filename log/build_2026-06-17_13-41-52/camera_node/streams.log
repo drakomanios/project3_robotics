@@ -1,0 +1,35 @@
+[5.729s] Invoking command in '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/camera_node': PYTHONPATH=/home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera_node build --build-base /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build install --prefix /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node --record /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/install.log --single-version-externally-managed
+[7.153s] running egg_info
+[7.155s] creating ../../build/camera_node/camera_node.egg-info
+[7.158s] writing ../../build/camera_node/camera_node.egg-info/PKG-INFO
+[7.160s] writing dependency_links to ../../build/camera_node/camera_node.egg-info/dependency_links.txt
+[7.161s] writing entry points to ../../build/camera_node/camera_node.egg-info/entry_points.txt
+[7.162s] writing requirements to ../../build/camera_node/camera_node.egg-info/requires.txt
+[7.163s] writing top-level names to ../../build/camera_node/camera_node.egg-info/top_level.txt
+[7.170s] writing manifest file '../../build/camera_node/camera_node.egg-info/SOURCES.txt'
+[7.346s] reading manifest file '../../build/camera_node/camera_node.egg-info/SOURCES.txt'
+[7.347s] writing manifest file '../../build/camera_node/camera_node.egg-info/SOURCES.txt'
+[7.348s] running build
+[7.348s] running build_py
+[7.349s] creating /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build
+[7.350s] creating /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build/lib
+[7.351s] creating /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build/lib/camera_node
+[7.351s] copying camera_node/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build/lib/camera_node
+[7.352s] copying camera_node/py.typed -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build/lib/camera_node
+[7.353s] running install
+[7.362s] running install_lib
+[7.363s] creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages/camera_node
+[7.364s] copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build/lib/camera_node/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages/camera_node
+[7.366s] copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build/lib/camera_node/py.typed -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages/camera_node
+[7.369s] byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages/camera_node/__init__.py to __init__.cpython-38.pyc
+[7.375s] running install_data
+[7.377s] creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/share/ament_index
+[7.378s] creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/share/ament_index/resource_index
+[7.380s] creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/share/ament_index/resource_index/packages
+[7.381s] copying resource/camera_node -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/share/ament_index/resource_index/packages
+[7.382s] copying package.xml -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/share/camera_node
+[7.383s] running install_egg_info
+[7.386s] Copying ../../build/camera_node/camera_node.egg-info to /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages/camera_node-0.0.0-py3.8.egg-info
+[7.389s] running install_scripts
+[7.473s] writing list of installed files to '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/install.log'
+[7.630s] Invoked command in '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/camera_node' returned '0': PYTHONPATH=/home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera_node build --build-base /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build install --prefix /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node --record /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/install.log --single-version-externally-managed

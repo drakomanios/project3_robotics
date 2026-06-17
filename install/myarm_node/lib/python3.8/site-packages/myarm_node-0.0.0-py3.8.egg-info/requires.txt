@@ -1,0 +1,5 @@
+pymycobot
+setuptools
+
+[test]
+pytest

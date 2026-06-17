@@ -1,0 +1,3 @@
+[console_scripts]
+controller = myarm_node.myarm_controller:main
+

@@ -1,0 +1,185 @@
+[0.000000] (-) TimerEvent: {}
+[0.001251] (camera_node) JobQueued: {'identifier': 'camera_node', 'dependencies': OrderedDict()}
+[0.001610] (myarm_node) JobQueued: {'identifier': 'myarm_node', 'dependencies': OrderedDict()}
+[0.002464] (camera_node) JobStarted: {'identifier': 'camera_node'}
+[0.080425] (myarm_node) JobStarted: {'identifier': 'myarm_node'}
+[0.099156] (-) TimerEvent: {}
+[0.200372] (-) TimerEvent: {}
+[0.301479] (-) TimerEvent: {}
+[0.402336] (-) TimerEvent: {}
+[0.503271] (-) TimerEvent: {}
+[0.604018] (-) TimerEvent: {}
+[0.704815] (-) TimerEvent: {}
+[0.805621] (-) TimerEvent: {}
+[0.906400] (-) TimerEvent: {}
+[1.007203] (-) TimerEvent: {}
+[1.107919] (-) TimerEvent: {}
+[1.208747] (-) TimerEvent: {}
+[1.309517] (-) TimerEvent: {}
+[1.410580] (-) TimerEvent: {}
+[1.512917] (-) TimerEvent: {}
+[1.615331] (-) TimerEvent: {}
+[1.716484] (-) TimerEvent: {}
+[1.817384] (-) TimerEvent: {}
+[1.918219] (-) TimerEvent: {}
+[2.018968] (-) TimerEvent: {}
+[2.119824] (-) TimerEvent: {}
+[2.220988] (-) TimerEvent: {}
+[2.321725] (-) TimerEvent: {}
+[2.422464] (-) TimerEvent: {}
+[2.523230] (-) TimerEvent: {}
+[2.624067] (-) TimerEvent: {}
+[2.724910] (-) TimerEvent: {}
+[2.828269] (-) TimerEvent: {}
+[2.930428] (-) TimerEvent: {}
+[3.031824] (-) TimerEvent: {}
+[3.133534] (-) TimerEvent: {}
+[3.235044] (-) TimerEvent: {}
+[3.337561] (-) TimerEvent: {}
+[3.438352] (-) TimerEvent: {}
+[3.539215] (-) TimerEvent: {}
+[3.640046] (-) TimerEvent: {}
+[3.740800] (-) TimerEvent: {}
+[3.841535] (-) TimerEvent: {}
+[3.942339] (-) TimerEvent: {}
+[4.043244] (-) TimerEvent: {}
+[4.144175] (-) TimerEvent: {}
+[4.245274] (-) TimerEvent: {}
+[4.346032] (-) TimerEvent: {}
+[4.446885] (-) TimerEvent: {}
+[4.547985] (-) TimerEvent: {}
+[4.648950] (-) TimerEvent: {}
+[4.749774] (-) TimerEvent: {}
+[4.850620] (-) TimerEvent: {}
+[4.951520] (-) TimerEvent: {}
+[5.052861] (-) TimerEvent: {}
+[5.153694] (-) TimerEvent: {}
+[5.254556] (-) TimerEvent: {}
+[5.355462] (-) TimerEvent: {}
+[5.457099] (-) TimerEvent: {}
+[5.559046] (-) TimerEvent: {}
+[5.661169] (-) TimerEvent: {}
+[5.692700] (myarm_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/myarm_node', 'build', '--build-base', '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build', 'install', '--prefix', '/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node', '--record', '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/install.log', '--single-version-externally-managed'], 'cwd': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/myarm_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'er', 'SSH_CLIENT': '192.168.0.174 49667 22', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/er/.vscode-server/cli/servers/Stable-6928394f91b684055b873eecb8bc281365131f1c/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'BROWSER': '/home/er/.vscode-server/cli/servers/Stable-6928394f91b684055b873eecb8bc281365131f1c/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/er', 'OLDPWD': '/home/er/.vscode-server', 'TERM_PROGRAM_VERSION': '1.124.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-45e81e25-83b3-4d8e-84f1-c97936fb37f5.sock', 'PYENV_SHELL': 'bash', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'appmenu-gtk-module', 'VSCODE_GIT_ASKPASS_MAIN': '/home/er/.vscode-server/cli/servers/Stable-6928394f91b684055b873eecb8bc281365131f1c/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/er/.vscode-server/cli/servers/Stable-6928394f91b684055b873eecb8bc281365131f1c/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'UBUNTU_MENUPROXY': '1', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'er', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '9', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/er/.pyenv/shims:/home/er/.vscode-server/cli/servers/Stable-6928394f91b684055b873eecb8bc281365131f1c/server/bin/remote-cli:/home/er/.local/bin:/opt/ros/galactic/bin:/home/er/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'letter', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5cfaebb6f8.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.174 49667 192.168.0.134 22', 'PYENV_ROOT': '/home/er/.pyenv', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1'}, 'shell': False}
+[5.721592] (camera_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/camera_node', 'build', '--build-base', '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build', 'install', '--prefix', '/home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node', '--record', '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/install.log', '--single-version-externally-managed'], 'cwd': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/camera_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'er', 'SSH_CLIENT': '192.168.0.174 49667 22', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/er/.vscode-server/cli/servers/Stable-6928394f91b684055b873eecb8bc281365131f1c/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'BROWSER': '/home/er/.vscode-server/cli/servers/Stable-6928394f91b684055b873eecb8bc281365131f1c/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/er', 'OLDPWD': '/home/er/.vscode-server', 'TERM_PROGRAM_VERSION': '1.124.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-45e81e25-83b3-4d8e-84f1-c97936fb37f5.sock', 'PYENV_SHELL': 'bash', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'appmenu-gtk-module', 'VSCODE_GIT_ASKPASS_MAIN': '/home/er/.vscode-server/cli/servers/Stable-6928394f91b684055b873eecb8bc281365131f1c/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/er/.vscode-server/cli/servers/Stable-6928394f91b684055b873eecb8bc281365131f1c/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'UBUNTU_MENUPROXY': '1', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'er', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '9', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/er/.pyenv/shims:/home/er/.vscode-server/cli/servers/Stable-6928394f91b684055b873eecb8bc281365131f1c/server/bin/remote-cli:/home/er/.local/bin:/opt/ros/galactic/bin:/home/er/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'letter', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5cfaebb6f8.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.174 49667 192.168.0.134 22', 'PYENV_ROOT': '/home/er/.pyenv', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1'}, 'shell': False}
+[5.761391] (-) TimerEvent: {}
+[5.862473] (-) TimerEvent: {}
+[5.963616] (-) TimerEvent: {}
+[6.065254] (-) TimerEvent: {}
+[6.166335] (-) TimerEvent: {}
+[6.267210] (-) TimerEvent: {}
+[6.368003] (-) TimerEvent: {}
+[6.468885] (-) TimerEvent: {}
+[6.569734] (-) TimerEvent: {}
+[6.670639] (-) TimerEvent: {}
+[6.771794] (-) TimerEvent: {}
+[6.872577] (-) TimerEvent: {}
+[6.973553] (-) TimerEvent: {}
+[7.074486] (-) TimerEvent: {}
+[7.117449] (myarm_node) StdoutLine: {'line': b'running egg_info\n'}
+[7.120649] (myarm_node) StdoutLine: {'line': b'creating ../../build/myarm_node/myarm_node.egg-info\n'}
+[7.122927] (myarm_node) StdoutLine: {'line': b'writing ../../build/myarm_node/myarm_node.egg-info/PKG-INFO\n'}
+[7.125230] (myarm_node) StdoutLine: {'line': b'writing dependency_links to ../../build/myarm_node/myarm_node.egg-info/dependency_links.txt\n'}
+[7.127009] (myarm_node) StdoutLine: {'line': b'writing entry points to ../../build/myarm_node/myarm_node.egg-info/entry_points.txt\n'}
+[7.130962] (myarm_node) StdoutLine: {'line': b'writing requirements to ../../build/myarm_node/myarm_node.egg-info/requires.txt\n'}
+[7.133660] (myarm_node) StdoutLine: {'line': b'writing top-level names to ../../build/myarm_node/myarm_node.egg-info/top_level.txt\n'}
+[7.153072] (myarm_node) StdoutLine: {'line': b"writing manifest file '../../build/myarm_node/myarm_node.egg-info/SOURCES.txt'\n"}
+[7.154934] (camera_node) StdoutLine: {'line': b'running egg_info\n'}
+[7.157960] (camera_node) StdoutLine: {'line': b'creating ../../build/camera_node/camera_node.egg-info\n'}
+[7.159547] (camera_node) StdoutLine: {'line': b'writing ../../build/camera_node/camera_node.egg-info/PKG-INFO\n'}
+[7.162248] (camera_node) StdoutLine: {'line': b'writing dependency_links to ../../build/camera_node/camera_node.egg-info/dependency_links.txt\n'}
+[7.163314] (camera_node) StdoutLine: {'line': b'writing entry points to ../../build/camera_node/camera_node.egg-info/entry_points.txt\n'}
+[7.164821] (camera_node) StdoutLine: {'line': b'writing requirements to ../../build/camera_node/camera_node.egg-info/requires.txt\n'}
+[7.165680] (camera_node) StdoutLine: {'line': b'writing top-level names to ../../build/camera_node/camera_node.egg-info/top_level.txt\n'}
+[7.172516] (camera_node) StdoutLine: {'line': b"writing manifest file '../../build/camera_node/camera_node.egg-info/SOURCES.txt'\n"}
+[7.174643] (-) TimerEvent: {}
+[7.275467] (-) TimerEvent: {}
+[7.320953] (myarm_node) StdoutLine: {'line': b"reading manifest file '../../build/myarm_node/myarm_node.egg-info/SOURCES.txt'\n"}
+[7.325175] (myarm_node) StdoutLine: {'line': b"writing manifest file '../../build/myarm_node/myarm_node.egg-info/SOURCES.txt'\n"}
+[7.326127] (myarm_node) StdoutLine: {'line': b'running build\n'}
+[7.327371] (myarm_node) StdoutLine: {'line': b'running build_py\n'}
+[7.328717] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build\n'}
+[7.329471] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib\n'}
+[7.330291] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node\n'}
+[7.330813] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_controller.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node\n'}
+[7.331678] (myarm_node) StdoutLine: {'line': b'copying myarm_node/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node\n'}
+[7.347310] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[7.348406] (camera_node) StdoutLine: {'line': b"reading manifest file '../../build/camera_node/camera_node.egg-info/SOURCES.txt'\n"}
+[7.349015] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/myarm_connect.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[7.349623] (camera_node) StdoutLine: {'line': b"writing manifest file '../../build/camera_node/camera_node.egg-info/SOURCES.txt'\n"}
+[7.350316] (camera_node) StdoutLine: {'line': b'running build\n'}
+[7.350935] (camera_node) StdoutLine: {'line': b'running build_py\n'}
+[7.351727] (camera_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build\n'}
+[7.352352] (camera_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build/lib\n'}
+[7.352946] (camera_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build/lib/camera_node\n'}
+[7.353975] (camera_node) StdoutLine: {'line': b'copying camera_node/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build/lib/camera_node\n'}
+[7.354679] (camera_node) StdoutLine: {'line': b'copying camera_node/py.typed -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build/lib/camera_node\n'}
+[7.355404] (camera_node) StdoutLine: {'line': b'running install\n'}
+[7.356140] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[7.356841] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/math_utils.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[7.357602] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/poe_fkine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[7.358456] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/parameters.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[7.359571] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/poe_ikine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[7.360691] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/SE3_utils.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[7.361744] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/solve_inv_kine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[7.362550] (myarm_node) StdoutLine: {'line': b'copying myarm_node/py.typed -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node\n'}
+[7.363088] (myarm_node) StdoutLine: {'line': b'running install\n'}
+[7.363850] (myarm_node) StdoutLine: {'line': b'running install_lib\n'}
+[7.364310] (camera_node) StdoutLine: {'line': b'running install_lib\n'}
+[7.364963] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node\n'}
+[7.365620] (camera_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages/camera_node\n'}
+[7.366310] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_controller.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node\n'}
+[7.366903] (camera_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build/lib/camera_node/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages/camera_node\n'}
+[7.367628] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node\n'}
+[7.368476] (camera_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/build/lib/camera_node/py.typed -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages/camera_node\n'}
+[7.369146] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils\n'}
+[7.370294] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils/myarm_connect.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils\n'}
+[7.370955] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils\n'}
+[7.371726] (camera_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages/camera_node/__init__.py to __init__.cpython-38.pyc\n'}
+[7.372358] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils/math_utils.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils\n'}
+[7.372896] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils/poe_fkine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils\n'}
+[7.373434] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils/parameters.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils\n'}
+[7.374079] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils/poe_ikine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils\n'}
+[7.374740] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils/SE3_utils.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils\n'}
+[7.375548] (-) TimerEvent: {}
+[7.376131] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils/solve_inv_kine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils\n'}
+[7.376950] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/py.typed -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node\n'}
+[7.378021] (camera_node) StdoutLine: {'line': b'running install_data\n'}
+[7.378720] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_controller.py to myarm_controller.cpython-38.pyc\n'}
+[7.379551] (camera_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/share/ament_index\n'}
+[7.380295] (camera_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/share/ament_index/resource_index\n'}
+[7.381286] (camera_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/share/ament_index/resource_index/packages\n'}
+[7.383031] (camera_node) StdoutLine: {'line': b'copying resource/camera_node -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/share/ament_index/resource_index/packages\n'}
+[7.384674] (camera_node) StdoutLine: {'line': b'copying package.xml -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/share/camera_node\n'}
+[7.385655] (camera_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.386643] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/__init__.py to __init__.cpython-38.pyc\n'}
+[7.387386] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/myarm_connect.py to myarm_connect.cpython-38.pyc\n'}
+[7.388070] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/__init__.py to __init__.cpython-38.pyc\n'}
+[7.388655] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/math_utils.py to math_utils.cpython-38.pyc\n'}
+[7.389169] (camera_node) StdoutLine: {'line': b'Copying ../../build/camera_node/camera_node.egg-info to /home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages/camera_node-0.0.0-py3.8.egg-info\n'}
+[7.389677] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/poe_fkine.py to poe_fkine.cpython-38.pyc\n'}
+[7.390412] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/parameters.py to parameters.cpython-38.pyc\n'}
+[7.391339] (camera_node) StdoutLine: {'line': b'running install_scripts\n'}
+[7.393663] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/poe_ikine.py to poe_ikine.cpython-38.pyc\n'}
+[7.397515] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/SE3_utils.py to SE3_utils.cpython-38.pyc\n'}
+[7.402836] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/solve_inv_kine.py to solve_inv_kine.cpython-38.pyc\n'}
+[7.405405] (myarm_node) StdoutLine: {'line': b'running install_data\n'}
+[7.408608] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/share/ament_index\n'}
+[7.409495] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/share/ament_index/resource_index\n'}
+[7.410148] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/share/ament_index/resource_index/packages\n'}
+[7.410876] (myarm_node) StdoutLine: {'line': b'copying resource/myarm_node -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/share/ament_index/resource_index/packages\n'}
+[7.411576] (myarm_node) StdoutLine: {'line': b'copying package.xml -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/share/myarm_node\n'}
+[7.412111] (myarm_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.419887] (myarm_node) StdoutLine: {'line': b'Copying ../../build/myarm_node/myarm_node.egg-info to /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node-0.0.0-py3.8.egg-info\n'}
+[7.427281] (myarm_node) StdoutLine: {'line': b'running install_scripts\n'}
+[7.474365] (camera_node) StdoutLine: {'line': b"writing list of installed files to '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/camera_node/install.log'\n"}
+[7.477049] (-) TimerEvent: {}
+[7.531552] (myarm_node) StdoutLine: {'line': b'Installing talker script to /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/myarm_node\n'}
+[7.536224] (myarm_node) StdoutLine: {'line': b"writing list of installed files to '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/install.log'\n"}
+[7.577447] (-) TimerEvent: {}
+[7.630956] (camera_node) CommandEnded: {'returncode': 0}
+[7.677797] (-) TimerEvent: {}
+[7.737551] (camera_node) JobEnded: {'identifier': 'camera_node', 'rc': 0}
+[7.752940] (myarm_node) CommandEnded: {'returncode': 0}
+[7.781479] (-) TimerEvent: {}
+[7.794160] (myarm_node) JobEnded: {'identifier': 'myarm_node', 'rc': 0}
+[7.797780] (-) EventReactorShutdown: {}
