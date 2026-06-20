@@ -1,0 +1,167 @@
+import cv2
+import numpy as np
+import json
+import os
+
+CUBE_SIZE = 0.024  # meters
+CAMERA_RESOLUTION = 480
+ASPECT_RATIO = 1.3334
+BB_PADDING = 10
+
+cwd = os.getcwd()
+
+parameters = json.loads(open(os.path.join(cwd, "assets/camera/camera_params.json")).read())
+parameters = parameters["camera_parameters"]["4"]
+intrinsic_matrix = np.array(parameters['camera_matrix'])
+dist_coeffs = np.array(parameters['dist_coeffs'])
+
+cam = cv2.VideoCapture(1)
+cam.set(cv2.CAP_PROP_FRAME_HEIGHT, CAMERA_RESOLUTION)
+cam.set(cv2.CAP_PROP_FRAME_WIDTH, int(ASPECT_RATIO * CAMERA_RESOLUTION))
+
+lower_blue = np.array([220*0.5, 30*2.55, 30*2.55])
+upper_blue = np.array([250*0.5, 100*2.55, 100*2.55])
+
+lower_yellow = np.array([40*0.5, 20*2.55, 40*2.55])
+upper_yellow = np.array([70*0.5, 100*2.55, 100*2.55])
+
+with open("extrinsic_parameters.json", "r") as f:
+    ext_params = json.load(f)
+R_cw = np.array(ext_params["rotation_camera_to_world"])
+camera_pos = np.array(ext_params["camera_position_world"])
+
+def screen_space_to_world_space(u:float,v:float,size:float,width:float) -> tuple[float,float]:
+    '''
+    Estimates the real world xy position for an object of known size
+
+    **Parameters**:
+    - u : float , x coordinate in screenspace
+    - v : float , y coordinate in screenspace
+    - size : float, length of object in meters
+    - width : float, width of the object in pixels
+
+    **Returns**: 
+    - x coordinate in worldspace
+    - y coordinate in worldspace
+    - z coordinate in worldspace
+    '''
+    pts = np.array([[[u, v]]])
+
+    normalized = cv2.undistortPoints(
+        pts,
+        intrinsic_matrix,
+        dist_coeffs
+    )
+
+    ray = np.array([normalized[0,0,0], normalized[0,0,1], 1.0])
+
+    #depth estimation DOES NOT WORK
+    fx = intrinsic_matrix[0,0]
+    z = fx * size / width
+    print(z)
+
+    cube_pos_cameraspace = ray * z
+    cube_pos_worldspace = R_cw @ cube_pos_cameraspace + camera_pos
+    x_world , y_world , z_world = cube_pos_worldspace
+    
+    return x_world , y_world, z_world
+
+i = 0
+width_est = 0
+while True:
+    i += 1
+    ret, frame = cam.read()
+    if not ret:
+        break
+
+    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+
+    mask = cv2.inRange(hsv, lower_blue, upper_blue)
+    mask = cv2.GaussianBlur(mask,(5,5),0.0)
+
+    contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+    if len(contours) == 0:
+        cv2.imshow("frame", frame)
+        cv2.imshow("mask", mask)
+        if cv2.waitKey(1) == ord('q'):
+            break
+        continue
+
+    j = 0
+    for cube in contours:
+        if cv2.contourArea(cube) < 1000:
+            continue
+
+        j += 1
+
+        min_rect = cv2.minAreaRect(cube)
+        (u, v), (w, h), angle = min_rect
+        aspect = w/h
+        if aspect < 0.9 or aspect > 1.1:
+            continue
+        box = cv2.boxPoints(min_rect)
+        box = np.int32(box)
+        cv2.drawContours(frame, [box], 0, (0,255,0), 2)
+
+        # x, y, w, h = cv2.boundingRect(cube) 
+        # x -= BB_PADDING//2
+        # y -= BB_PADDING//2
+        # w += BB_PADDING//2
+        # h += BB_PADDING//2
+        # u = (x*2+w)/2
+        # v = (y*2+h)/2
+
+        # roi_mask = np.zeros_like(mask)
+        # roi_mask[y:y+h, x:x+w] = mask[y:y+h, x:x+w]
+        # roi_frame = frame[y:y+h, x:x+w].copy()
+
+        # cv2.rectangle(frame, (x,y), (x+w, y+h), (0,255,0), 2)
+
+        # Edge detection inside ROI
+        # gray = cv2.GaussianBlur(roi_mask, (5,5), 0)
+        # edges = cv2.Canny(gray, 50, 150)
+
+        # lines = cv2.HoughLinesP(
+        #     edges,
+        #     1,
+        #     np.pi/180,
+        #     threshold=30,
+        #     minLineLength=20,
+        #     maxLineGap=20
+        # )
+
+        # if lines is None:
+        #     continue
+
+        # lengths = []
+
+        # for l in lines:
+        #     x1, y1, x2, y2 = l[0]
+
+        #     dx = x2 - x1
+        #     dy = y2 - y1
+        #     length = np.sqrt(dx*dx + dy*dy)
+
+        #     angle = np.degrees(np.arctan2(dy, dx))
+
+        #     lengths.append(length)
+        #     cv2.line(frame, (x1,y1), (x2,y2), (0,0,255), 2)
+
+        # width_est = np.mean(lengths)
+        width_est = np.sqrt(w*h)
+
+        if i%50 == 0:
+            x, y, z = screen_space_to_world_space(u,v,size=CUBE_SIZE,width=width_est)
+            print(f"cube {j} xyz:",np.round(x*100,3),np.round(y*100,3),np.round(z*100,3))
+
+    cv2.imshow("frame", frame)
+    cv2.imshow("mask", mask)
+    # cv2.imshow("roi mask",roi_mask)
+    # cv2.imshow("edges", edges)
+
+    if cv2.waitKey(1) == ord('q'):
+        break
+
+cam.release()
+cv2.destroyAllWindows()
