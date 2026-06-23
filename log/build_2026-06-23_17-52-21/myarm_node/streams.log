@@ -1,0 +1,27 @@
+[3.831s] Invoking command in '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/myarm_node': PYTHONPATH=/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/myarm_node build --build-base /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build install --prefix /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node --record /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/install.log --single-version-externally-managed
+[5.117s] running egg_info
+[5.120s] writing ../../build/myarm_node/myarm_node.egg-info/PKG-INFO
+[5.122s] writing dependency_links to ../../build/myarm_node/myarm_node.egg-info/dependency_links.txt
+[5.123s] writing entry points to ../../build/myarm_node/myarm_node.egg-info/entry_points.txt
+[5.124s] writing requirements to ../../build/myarm_node/myarm_node.egg-info/requires.txt
+[5.125s] writing top-level names to ../../build/myarm_node/myarm_node.egg-info/top_level.txt
+[5.289s] reading manifest file '../../build/myarm_node/myarm_node.egg-info/SOURCES.txt'
+[5.298s] writing manifest file '../../build/myarm_node/myarm_node.egg-info/SOURCES.txt'
+[5.299s] running build
+[5.300s] running build_py
+[5.301s] copying myarm_node/myarm_controller.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node
+[5.304s] copying myarm_node/myarm_utils/fullpose_IK_solve_methods.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils
+[5.322s] running install
+[5.326s] running install_lib
+[5.331s] copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_controller.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node
+[5.341s] copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_utils/fullpose_IK_solve_methods.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils
+[5.355s] byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_controller.py to myarm_controller.cpython-38.pyc
+[5.369s] byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/fullpose_IK_solve_methods.py to fullpose_IK_solve_methods.cpython-38.pyc
+[5.379s] running install_data
+[5.382s] running install_egg_info
+[5.390s] removing '/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node-0.0.0-py3.8.egg-info' (and everything under it)
+[5.393s] Copying ../../build/myarm_node/myarm_node.egg-info to /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node-0.0.0-py3.8.egg-info
+[5.399s] running install_scripts
+[5.472s] Installing controller script to /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/myarm_node
+[5.479s] writing list of installed files to '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/install.log'
+[5.613s] Invoked command in '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/myarm_node' returned '0': PYTHONPATH=/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/myarm_node build --build-base /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build install --prefix /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node --record /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/install.log --single-version-externally-managed

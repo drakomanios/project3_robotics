@@ -1,0 +1,24 @@
+[3.652s] Invoking command in '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/myarm_node': PYTHONPATH=/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/myarm_node build --build-base /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build install --prefix /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node --record /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/install.log --single-version-externally-managed
+[4.942s] running egg_info
+[4.945s] writing ../../build/myarm_node/myarm_node.egg-info/PKG-INFO
+[4.946s] writing dependency_links to ../../build/myarm_node/myarm_node.egg-info/dependency_links.txt
+[4.948s] writing entry points to ../../build/myarm_node/myarm_node.egg-info/entry_points.txt
+[4.948s] writing requirements to ../../build/myarm_node/myarm_node.egg-info/requires.txt
+[4.949s] writing top-level names to ../../build/myarm_node/myarm_node.egg-info/top_level.txt
+[5.113s] reading manifest file '../../build/myarm_node/myarm_node.egg-info/SOURCES.txt'
+[5.118s] writing manifest file '../../build/myarm_node/myarm_node.egg-info/SOURCES.txt'
+[5.119s] running build
+[5.120s] running build_py
+[5.121s] copying myarm_node/myarm_controller.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node
+[5.125s] running install
+[5.129s] running install_lib
+[5.134s] copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_controller.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node
+[5.140s] byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_controller.py to myarm_controller.cpython-38.pyc
+[5.150s] running install_data
+[5.154s] running install_egg_info
+[5.161s] removing '/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node-0.0.0-py3.8.egg-info' (and everything under it)
+[5.163s] Copying ../../build/myarm_node/myarm_node.egg-info to /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node-0.0.0-py3.8.egg-info
+[5.169s] running install_scripts
+[5.243s] Installing controller script to /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/myarm_node
+[5.247s] writing list of installed files to '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/install.log'
+[5.365s] Invoked command in '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/myarm_node' returned '0': PYTHONPATH=/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/myarm_node build --build-base /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build install --prefix /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node --record /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/install.log --single-version-externally-managed

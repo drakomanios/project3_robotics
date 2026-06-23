@@ -6,7 +6,7 @@ from rclpy.node import Node
 from std_msgs.msg import String
 from myarm_node.myarm_utils.myarm_connect import connect
 from myarm_node.myarm_utils.SE3_utils import quat_to_rot
-from myarm_node.myarm_utils.solve_inv_kine import solve_ik
+from myarm_node.myarm_utils.fullpose_IK_solve_methods import poe_ik_dls_qp
 from myarm_node.myarm_utils.poe_fkine import poe_fk
 from sensor_msgs.msg import JointState
 from geometry_msgs.msg import PoseStamped
@@ -62,8 +62,8 @@ class MyArmNode(Node):
             positions.append(round(math.radians(angle),3))
         msg.position = positions
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.position)
-        # self.goto(x,y,z)
+        # self.get_logger().info('Publishing: "%s"' % msg.position)
+        self.goto(0.2,0.,0.3)
 
 
     def obstacle_callback(self, msg):
@@ -76,7 +76,7 @@ class MyArmNode(Node):
         self.get_logger().info(f"Detected obstacle at: x={x}, y={y}, z={z}")
 
         # Call the goto function to move the robot arm to the detected obstacle position
-        self.goto(x, y, z)
+        # self.goto(x, y, z)
 
     
     def goto(self, x, y, z):
@@ -85,13 +85,13 @@ class MyArmNode(Node):
         #     self.myarm.send_angles(self.q0_list.tolist(), self.speed)
 
         # Build desired end-effector pose in myarm base (world) frame
-        Twbd = np.eye(4)
-        Twbd[0:3, 3] = np.array([x, y, z])
+        Twbd = np.diag([1., -1., -1. ,1.])
+        Twbd[:, 3] = np.array([x, y, z, 1.])
         print(Twbd)
 
         # Solve inverse kinematics
         self.get_logger().warn("Starting inverse kinematics ...")
-        q_rad, ik_success = solve_ik(Twbd, "space", self.q0_list, 1e-5)
+        q_rad, ik_success = poe_ik_dls_qp(self.q0_list, Twbd, "space", "world", 1.0, 100, 1e-5, 1e-3, "custom")
 
         if ik_success:
             # Convert radians to degrees and send command to myarm

@@ -1,0 +1,84 @@
+[0.000000] (-) TimerEvent: {}
+[0.001335] (myarm_node) JobQueued: {'identifier': 'myarm_node', 'dependencies': OrderedDict()}
+[0.002547] (myarm_node) JobStarted: {'identifier': 'myarm_node'}
+[0.099067] (-) TimerEvent: {}
+[0.206095] (-) TimerEvent: {}
+[0.307419] (-) TimerEvent: {}
+[0.408255] (-) TimerEvent: {}
+[0.509077] (-) TimerEvent: {}
+[0.609869] (-) TimerEvent: {}
+[0.710624] (-) TimerEvent: {}
+[0.811452] (-) TimerEvent: {}
+[0.912201] (-) TimerEvent: {}
+[1.012996] (-) TimerEvent: {}
+[1.113956] (-) TimerEvent: {}
+[1.214768] (-) TimerEvent: {}
+[1.315720] (-) TimerEvent: {}
+[1.416653] (-) TimerEvent: {}
+[1.520313] (-) TimerEvent: {}
+[1.621672] (-) TimerEvent: {}
+[1.722739] (-) TimerEvent: {}
+[1.823598] (-) TimerEvent: {}
+[1.924400] (-) TimerEvent: {}
+[2.025252] (-) TimerEvent: {}
+[2.126032] (-) TimerEvent: {}
+[2.226877] (-) TimerEvent: {}
+[2.327669] (-) TimerEvent: {}
+[2.428448] (-) TimerEvent: {}
+[2.529169] (-) TimerEvent: {}
+[2.630000] (-) TimerEvent: {}
+[2.731065] (-) TimerEvent: {}
+[2.831877] (-) TimerEvent: {}
+[2.932679] (-) TimerEvent: {}
+[3.033577] (-) TimerEvent: {}
+[3.134370] (-) TimerEvent: {}
+[3.235564] (-) TimerEvent: {}
+[3.336616] (-) TimerEvent: {}
+[3.437500] (-) TimerEvent: {}
+[3.538370] (-) TimerEvent: {}
+[3.639401] (-) TimerEvent: {}
+[3.731949] (myarm_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/myarm_node', 'build', '--build-base', '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build', 'install', '--prefix', '/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node', '--record', '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/install.log', '--single-version-externally-managed'], 'cwd': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/myarm_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'er', 'SSH_CLIENT': '192.168.0.174 60334 22', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/er/.vscode-server/cli/servers/Stable-fcf604774b9f2674b473065736ee75077e256353/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'BROWSER': '/home/er/.vscode-server/cli/servers/Stable-fcf604774b9f2674b473065736ee75077e256353/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/er', 'TERM_PROGRAM_VERSION': '1.125.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-dbe6f5f4-4283-4db8-b403-f667d5ae3efe.sock', 'PYENV_SHELL': 'bash', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'appmenu-gtk-module', 'VSCODE_GIT_ASKPASS_MAIN': '/home/er/.vscode-server/cli/servers/Stable-fcf604774b9f2674b473065736ee75077e256353/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/er/.vscode-server/cli/servers/Stable-fcf604774b9f2674b473065736ee75077e256353/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'UBUNTU_MENUPROXY': '1', 'COLCON_PREFIX_PATH': '/home/er/project3_team5_robotic_systems_1/project3_robotics/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'er', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/er/.pyenv/shims:/home/er/.vscode-server/cli/servers/Stable-fcf604774b9f2674b473065736ee75077e256353/server/bin/remote-cli:/home/er/.local/bin:/opt/ros/galactic/bin:/home/er/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'letter', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5cfaebb6f8.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node:/home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node:/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.174 60334 192.168.0.134 22', 'PYENV_ROOT': '/home/er/.pyenv', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages:/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages:/home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1'}, 'shell': False}
+[3.749015] (-) TimerEvent: {}
+[3.850906] (-) TimerEvent: {}
+[3.951851] (-) TimerEvent: {}
+[4.052740] (-) TimerEvent: {}
+[4.153618] (-) TimerEvent: {}
+[4.254539] (-) TimerEvent: {}
+[4.355471] (-) TimerEvent: {}
+[4.456270] (-) TimerEvent: {}
+[4.557045] (-) TimerEvent: {}
+[4.657808] (-) TimerEvent: {}
+[4.758577] (-) TimerEvent: {}
+[4.859487] (-) TimerEvent: {}
+[4.960304] (-) TimerEvent: {}
+[5.046061] (myarm_node) StdoutLine: {'line': b'running egg_info\n'}
+[5.049340] (myarm_node) StdoutLine: {'line': b'writing ../../build/myarm_node/myarm_node.egg-info/PKG-INFO\n'}
+[5.050644] (myarm_node) StdoutLine: {'line': b'writing dependency_links to ../../build/myarm_node/myarm_node.egg-info/dependency_links.txt\n'}
+[5.051936] (myarm_node) StdoutLine: {'line': b'writing entry points to ../../build/myarm_node/myarm_node.egg-info/entry_points.txt\n'}
+[5.053105] (myarm_node) StdoutLine: {'line': b'writing requirements to ../../build/myarm_node/myarm_node.egg-info/requires.txt\n'}
+[5.053966] (myarm_node) StdoutLine: {'line': b'writing top-level names to ../../build/myarm_node/myarm_node.egg-info/top_level.txt\n'}
+[5.060490] (-) TimerEvent: {}
+[5.161316] (-) TimerEvent: {}
+[5.216599] (myarm_node) StdoutLine: {'line': b"reading manifest file '../../build/myarm_node/myarm_node.egg-info/SOURCES.txt'\n"}
+[5.221750] (myarm_node) StdoutLine: {'line': b"writing manifest file '../../build/myarm_node/myarm_node.egg-info/SOURCES.txt'\n"}
+[5.222747] (myarm_node) StdoutLine: {'line': b'running build\n'}
+[5.223660] (myarm_node) StdoutLine: {'line': b'running build_py\n'}
+[5.224360] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_controller.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node\n'}
+[5.229441] (myarm_node) StdoutLine: {'line': b'running install\n'}
+[5.232970] (myarm_node) StdoutLine: {'line': b'running install_lib\n'}
+[5.237776] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/myarm_controller.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node\n'}
+[5.243784] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_controller.py to myarm_controller.cpython-38.pyc\n'}
+[5.254083] (myarm_node) StdoutLine: {'line': b'running install_data\n'}
+[5.257198] (myarm_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.261514] (-) TimerEvent: {}
+[5.264952] (myarm_node) StdoutLine: {'line': b"removing '/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.267163] (myarm_node) StdoutLine: {'line': b'Copying ../../build/myarm_node/myarm_node.egg-info to /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node-0.0.0-py3.8.egg-info\n'}
+[5.281194] (myarm_node) StdoutLine: {'line': b'running install_scripts\n'}
+[5.357783] (myarm_node) StdoutLine: {'line': b'Installing controller script to /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/myarm_node\n'}
+[5.360731] (myarm_node) StdoutLine: {'line': b"writing list of installed files to '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/install.log'\n"}
+[5.361555] (-) TimerEvent: {}
+[5.462779] (-) TimerEvent: {}
+[5.481812] (myarm_node) CommandEnded: {'returncode': 0}
+[5.562906] (-) TimerEvent: {}
+[5.575124] (myarm_node) JobEnded: {'identifier': 'myarm_node', 'rc': 0}
+[5.581426] (-) EventReactorShutdown: {}

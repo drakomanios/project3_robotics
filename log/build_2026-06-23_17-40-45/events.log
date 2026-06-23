@@ -1,0 +1,160 @@
+[0.000000] (-) TimerEvent: {}
+[0.001303] (myarm_node) JobQueued: {'identifier': 'myarm_node', 'dependencies': OrderedDict()}
+[0.002516] (myarm_node) JobStarted: {'identifier': 'myarm_node'}
+[0.099082] (-) TimerEvent: {}
+[0.200434] (-) TimerEvent: {}
+[0.301365] (-) TimerEvent: {}
+[0.402295] (-) TimerEvent: {}
+[0.503135] (-) TimerEvent: {}
+[0.604000] (-) TimerEvent: {}
+[0.704838] (-) TimerEvent: {}
+[0.805699] (-) TimerEvent: {}
+[0.906559] (-) TimerEvent: {}
+[1.007407] (-) TimerEvent: {}
+[1.108190] (-) TimerEvent: {}
+[1.209053] (-) TimerEvent: {}
+[1.310001] (-) TimerEvent: {}
+[1.410995] (-) TimerEvent: {}
+[1.512194] (-) TimerEvent: {}
+[1.613622] (-) TimerEvent: {}
+[1.714532] (-) TimerEvent: {}
+[1.815453] (-) TimerEvent: {}
+[1.916264] (-) TimerEvent: {}
+[2.017121] (-) TimerEvent: {}
+[2.117994] (-) TimerEvent: {}
+[2.218860] (-) TimerEvent: {}
+[2.319928] (-) TimerEvent: {}
+[2.420772] (-) TimerEvent: {}
+[2.521617] (-) TimerEvent: {}
+[2.622492] (-) TimerEvent: {}
+[2.723469] (-) TimerEvent: {}
+[2.824316] (-) TimerEvent: {}
+[2.925105] (-) TimerEvent: {}
+[3.026210] (-) TimerEvent: {}
+[3.127037] (-) TimerEvent: {}
+[3.227857] (-) TimerEvent: {}
+[3.328747] (-) TimerEvent: {}
+[3.429692] (-) TimerEvent: {}
+[3.530620] (-) TimerEvent: {}
+[3.632133] (-) TimerEvent: {}
+[3.692024] (myarm_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/myarm_node', 'build', '--build-base', '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build', 'install', '--prefix', '/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node', '--record', '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/install.log', '--single-version-externally-managed'], 'cwd': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/myarm_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'er', 'SSH_CLIENT': '192.168.0.174 60334 22', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/er/.vscode-server/cli/servers/Stable-fcf604774b9f2674b473065736ee75077e256353/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'BROWSER': '/home/er/.vscode-server/cli/servers/Stable-fcf604774b9f2674b473065736ee75077e256353/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/er', 'TERM_PROGRAM_VERSION': '1.125.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-dbe6f5f4-4283-4db8-b403-f667d5ae3efe.sock', 'PYENV_SHELL': 'bash', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'appmenu-gtk-module', 'VSCODE_GIT_ASKPASS_MAIN': '/home/er/.vscode-server/cli/servers/Stable-fcf604774b9f2674b473065736ee75077e256353/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/er/.vscode-server/cli/servers/Stable-fcf604774b9f2674b473065736ee75077e256353/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'UBUNTU_MENUPROXY': '1', 'COLCON_PREFIX_PATH': '/home/er/project3_team5_robotic_systems_1/project3_robotics/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'er', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/er/.pyenv/shims:/home/er/.vscode-server/cli/servers/Stable-fcf604774b9f2674b473065736ee75077e256353/server/bin/remote-cli:/home/er/.local/bin:/opt/ros/galactic/bin:/home/er/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'letter', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5cfaebb6f8.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node:/home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node:/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.174 60334 192.168.0.134 22', 'PYENV_ROOT': '/home/er/.pyenv', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages:/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages:/home/er/project3_team5_robotic_systems_1/project3_robotics/install/camera_node/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1'}, 'shell': False}
+[3.732308] (-) TimerEvent: {}
+[3.833478] (-) TimerEvent: {}
+[3.934756] (-) TimerEvent: {}
+[4.036006] (-) TimerEvent: {}
+[4.136851] (-) TimerEvent: {}
+[4.237695] (-) TimerEvent: {}
+[4.338498] (-) TimerEvent: {}
+[4.439394] (-) TimerEvent: {}
+[4.540206] (-) TimerEvent: {}
+[4.641057] (-) TimerEvent: {}
+[4.741963] (-) TimerEvent: {}
+[4.842776] (-) TimerEvent: {}
+[4.943692] (-) TimerEvent: {}
+[4.972947] (myarm_node) StdoutLine: {'line': b'running egg_info\n'}
+[4.976301] (myarm_node) StdoutLine: {'line': b'writing ../../build/myarm_node/myarm_node.egg-info/PKG-INFO\n'}
+[4.977699] (myarm_node) StdoutLine: {'line': b'writing dependency_links to ../../build/myarm_node/myarm_node.egg-info/dependency_links.txt\n'}
+[4.978748] (myarm_node) StdoutLine: {'line': b'writing entry points to ../../build/myarm_node/myarm_node.egg-info/entry_points.txt\n'}
+[4.979777] (myarm_node) StdoutLine: {'line': b'writing requirements to ../../build/myarm_node/myarm_node.egg-info/requires.txt\n'}
+[4.980731] (myarm_node) StdoutLine: {'line': b'writing top-level names to ../../build/myarm_node/myarm_node.egg-info/top_level.txt\n'}
+[5.043873] (-) TimerEvent: {}
+[5.143781] (myarm_node) StdoutLine: {'line': b"reading manifest file '../../build/myarm_node/myarm_node.egg-info/SOURCES.txt'\n"}
+[5.144565] (-) TimerEvent: {}
+[5.151652] (myarm_node) StdoutLine: {'line': b"writing manifest file '../../build/myarm_node/myarm_node.egg-info/SOURCES.txt'\n"}
+[5.153033] (myarm_node) StdoutLine: {'line': b'running build\n'}
+[5.153860] (myarm_node) StdoutLine: {'line': b'running build_py\n'}
+[5.155540] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.157020] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/velocity_control.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.158930] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/dh_fkine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.161143] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/general_utils.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.164585] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/viz_utils.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.166708] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.167972] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/viz_scenes.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.168589] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/myarm_control.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.170403] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/poe_diffkine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.172431] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/SE3_functions.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.174458] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/poe_idiffkine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.176604] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/trajectories.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.179178] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/poe_fkine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.180808] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/parameters.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.182053] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/poe_ikine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.183175] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/urdf_fkine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics\n'}
+[5.184326] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/QP_solver\n'}
+[5.186354] (myarm_node) StdoutLine: {'line': b'copying myarm_node/QP_solver/general_utils.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/QP_solver\n'}
+[5.188514] (myarm_node) StdoutLine: {'line': b'copying myarm_node/QP_solver/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/QP_solver\n'}
+[5.191038] (myarm_node) StdoutLine: {'line': b'copying myarm_node/QP_solver/QP.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/QP_solver\n'}
+[5.191766] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/tests\n'}
+[5.192328] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/tests/test_differential_kinematics.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/tests\n'}
+[5.192830] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/tests/test_forward_kinematics.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/tests\n'}
+[5.194579] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/tests/test_exp_log.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/tests\n'}
+[5.195924] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/tests/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/tests\n'}
+[5.197334] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/tests/test_jacobians.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/tests\n'}
+[5.198866] (myarm_node) StdoutLine: {'line': b'copying myarm_node/kinematics/tests/run_all_tests.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/tests\n'}
+[5.200449] (myarm_node) StdoutLine: {'line': b'running install\n'}
+[5.201849] (myarm_node) StdoutLine: {'line': b'running install_lib\n'}
+[5.205415] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.207564] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/velocity_control.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.208750] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/dh_fkine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.209672] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/general_utils.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.210490] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/viz_utils.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.211078] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.211754] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/viz_scenes.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.212450] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/myarm_control.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.213166] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/poe_diffkine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.214033] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/SE3_functions.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.215049] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/poe_idiffkine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.216053] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/trajectories.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.217019] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/poe_fkine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.218045] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/parameters.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.219244] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/tests\n'}
+[5.220172] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/tests/test_differential_kinematics.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/tests\n'}
+[5.220974] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/tests/test_forward_kinematics.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/tests\n'}
+[5.222086] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/tests/test_exp_log.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/tests\n'}
+[5.223092] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/tests/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/tests\n'}
+[5.224075] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/tests/test_jacobians.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/tests\n'}
+[5.225157] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/tests/run_all_tests.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/tests\n'}
+[5.226230] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/poe_ikine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.227234] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/kinematics/urdf_fkine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics\n'}
+[5.228675] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/QP_solver\n'}
+[5.229695] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/QP_solver/general_utils.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/QP_solver\n'}
+[5.231153] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/QP_solver/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/QP_solver\n'}
+[5.231906] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/build/lib/myarm_node/QP_solver/QP.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/QP_solver\n'}
+[5.244730] (-) TimerEvent: {}
+[5.246976] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/velocity_control.py to velocity_control.cpython-38.pyc\n'}
+[5.254885] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/dh_fkine.py to dh_fkine.cpython-38.pyc\n'}
+[5.258622] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/general_utils.py to general_utils.cpython-38.pyc\n'}
+[5.261336] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/viz_utils.py to viz_utils.cpython-38.pyc\n'}
+[5.265664] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/__init__.py to __init__.cpython-38.pyc\n'}
+[5.267063] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/viz_scenes.py to viz_scenes.cpython-38.pyc\n'}
+[5.270542] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/myarm_control.py to myarm_control.cpython-38.pyc\n'}
+[5.272592] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/poe_diffkine.py to poe_diffkine.cpython-38.pyc\n'}
+[5.276158] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/SE3_functions.py to SE3_functions.cpython-38.pyc\n'}
+[5.281390] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/poe_idiffkine.py to poe_idiffkine.cpython-38.pyc\n'}
+[5.283367] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/trajectories.py to trajectories.cpython-38.pyc\n'}
+[5.285610] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/poe_fkine.py to poe_fkine.cpython-38.pyc\n'}
+[5.288492] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/parameters.py to parameters.cpython-38.pyc\n'}
+[5.292374] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/tests/test_differential_kinematics.py to test_differential_kinematics.cpython-38.pyc\n'}
+[5.295089] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/tests/test_forward_kinematics.py to test_forward_kinematics.cpython-38.pyc\n'}
+[5.297749] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/tests/test_exp_log.py to test_exp_log.cpython-38.pyc\n'}
+[5.300779] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/tests/__init__.py to __init__.cpython-38.pyc\n'}
+[5.302277] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/tests/test_jacobians.py to test_jacobians.cpython-38.pyc\n'}
+[5.305078] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/tests/run_all_tests.py to run_all_tests.cpython-38.pyc\n'}
+[5.308601] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/poe_ikine.py to poe_ikine.cpython-38.pyc\n'}
+[5.311469] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/kinematics/urdf_fkine.py to urdf_fkine.cpython-38.pyc\n'}
+[5.314175] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/QP_solver/general_utils.py to general_utils.cpython-38.pyc\n'}
+[5.317750] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/QP_solver/__init__.py to __init__.cpython-38.pyc\n'}
+[5.319116] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node/QP_solver/QP.py to QP.cpython-38.pyc\n'}
+[5.339670] (myarm_node) StdoutLine: {'line': b'running install_data\n'}
+[5.342693] (myarm_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.344888] (-) TimerEvent: {}
+[5.350171] (myarm_node) StdoutLine: {'line': b"removing '/home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.352854] (myarm_node) StdoutLine: {'line': b'Copying ../../build/myarm_node/myarm_node.egg-info to /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/python3.8/site-packages/myarm_node-0.0.0-py3.8.egg-info\n'}
+[5.359671] (myarm_node) StdoutLine: {'line': b'running install_scripts\n'}
+[5.430630] (myarm_node) StdoutLine: {'line': b'Installing controller script to /home/er/project3_team5_robotic_systems_1/project3_robotics/install/myarm_node/lib/myarm_node\n'}
+[5.437517] (myarm_node) StdoutLine: {'line': b"writing list of installed files to '/home/er/project3_team5_robotic_systems_1/project3_robotics/build/myarm_node/install.log'\n"}
+[5.445159] (-) TimerEvent: {}
+[5.546556] (-) TimerEvent: {}
+[5.553680] (myarm_node) CommandEnded: {'returncode': 0}
+[5.645059] (myarm_node) JobEnded: {'identifier': 'myarm_node', 'rc': 0}
+[5.650056] (-) TimerEvent: {}
+[5.650694] (-) EventReactorShutdown: {}
