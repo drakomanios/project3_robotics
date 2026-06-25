@@ -1,0 +1,7 @@
+calibration_images
+src/camera_node
+camera
+log
+build
+install
+*.pyc
