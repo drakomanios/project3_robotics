@@ -1,0 +1,113 @@
+[1.476s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build'][0m
+[1.476s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb532a7c0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb532a7c0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb532ad30>)[0m
+[1.671s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[1.672s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[1.673s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[1.673s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[1.673s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[1.674s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[1.674s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/er/project3_team5_robotic_systems_1/project3_robotics/src'
+[1.676s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.677s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[1.677s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[1.678s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[1.678s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[1.679s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[1.680s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[1.681s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[1.683s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[1.870s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[1.870s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[1.871s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[1.871s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[1.871s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[1.872s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.873s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[1.873s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[1.874s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.875s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[1.875s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[1.876s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.876s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[1.876s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[1.877s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(myarm_node) by extensions ['ignore', 'ignore_ament_install']
+[1.877s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(myarm_node) by extension 'ignore'
+[1.878s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(myarm_node) by extension 'ignore_ament_install'
+[1.878s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(myarm_node) by extensions ['colcon_pkg']
+[1.879s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(myarm_node) by extension 'colcon_pkg'
+[1.880s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(myarm_node) by extensions ['colcon_meta']
+[1.881s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(myarm_node) by extension 'colcon_meta'
+[1.882s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(myarm_node) by extensions ['ros']
+[1.883s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(myarm_node) by extension 'ros'
+[1.904s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'myarm_node' with type 'ros.ament_python' and name 'myarm_node'[0m
+[1.905s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[1.905s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[1.906s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[1.906s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[1.906s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[2.075s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[2.076s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[2.106s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 1 installed packages in /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install[0m
+[2.123s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 271 installed packages in /opt/ros/galactic[0m
+[2.135s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[2.987s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'myarm_node' build argument 'cmake_args' from command line to 'None'
+[2.987s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'myarm_node' build argument 'cmake_target' from command line to 'None'
+[2.987s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'myarm_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.988s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'myarm_node' build argument 'cmake_clean_cache' from command line to 'False'
+[2.988s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'myarm_node' build argument 'cmake_clean_first' from command line to 'False'
+[2.988s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'myarm_node' build argument 'cmake_force_configure' from command line to 'False'
+[2.989s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'myarm_node' build argument 'ament_cmake_args' from command line to 'None'
+[2.989s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'myarm_node' build argument 'catkin_cmake_args' from command line to 'None'
+[2.989s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'myarm_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.989s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'myarm_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node', 'merge_install': False, 'path': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/myarm_node', 'symlink_install': False, 'test_result_base': None}[0m
+[2.993s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[3.023s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[3.025s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/myarm_node' with build type 'ament_python'
+[3.026s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('myarm_node', 'ament_prefix_path')
+[3.069s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.073s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/share/myarm_node/hook/ament_prefix_path.ps1'
+[3.084s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/share/myarm_node/hook/ament_prefix_path.dsv'
+[3.089s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/share/myarm_node/hook/ament_prefix_path.sh'
+[3.105s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.107s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[5.771s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/myarm_node'
+[5.788s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.789s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[9.881s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/myarm_node': PYTHONPATH=/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/myarm_node build --build-base /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build install --prefix /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node --record /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/install.log --single-version-externally-managed[0m
+[13.175s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/myarm_node' returned '0': PYTHONPATH=/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/myarm_node build --build-base /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build install --prefix /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node --record /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/install.log --single-version-externally-managed[0m
+[13.225s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node' for CMake module files
+[13.228s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node' for CMake config files
+[13.244s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib'
+[13.247s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/bin'
+[13.248s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/pkgconfig/myarm_node.pc'
+[13.249s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages'
+[13.250s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('myarm_node', 'pythonpath')
+[13.259s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/share/myarm_node/hook/pythonpath.ps1'
+[13.263s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/share/myarm_node/hook/pythonpath.dsv'
+[13.272s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/share/myarm_node/hook/pythonpath.sh'
+[13.283s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/bin'
+[13.284s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(myarm_node)
+[13.293s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/share/myarm_node/package.ps1'
+[13.303s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/share/myarm_node/package.dsv'
+[13.313s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/share/myarm_node/package.sh'
+[13.323s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/share/myarm_node/package.bash'
+[13.329s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/share/myarm_node/package.zsh'
+[13.341s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/share/colcon-core/packages/myarm_node)
+[13.350s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[13.353s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[13.354s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[13.355s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[13.432s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.434s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.435s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[14.582s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[14.593s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/local_setup.ps1'
+[14.604s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/_local_setup_util_ps1.py'
+[14.617s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/setup.ps1'
+[14.634s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/local_setup.sh'
+[14.655s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/_local_setup_util_sh.py'
+[14.661s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/setup.sh'
+[14.673s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/local_setup.bash'
+[14.676s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/setup.bash'
+[14.692s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/local_setup.zsh'
+[14.698s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/setup.zsh'

@@ -1,9 +1,8 @@
 import numpy as np
-from myarm_node.myarm_utils.kinematics.poe_fkine import poe_fk
+from myarm_node.myarm_utils.poe_fkine import poe_fk
 from myarm_node.myarm_utils.kinematics.poe_diffkine import jacobian
 from myarm_node.myarm_utils.kinematics.poe_idiffkine import inverse_jacobian
 from myarm_node.myarm_utils.kinematics.SE3_functions import Log
-from myarm_node.myarm_utils.kinematics.parameters import q_lb, q_ub
 from myarm_node.myarm_utils.kinematics.parameters import N, screws, Tws, Tsb, q_lb, q_ub, qdot_lb, qdot_ub
 from myarm_node.myarm_utils.QP_solver.QP import QP
 
@@ -15,7 +14,7 @@ def poe_ik_newton(
         frame_ref = "world",
         max_ik_iter = 100,
         error_tol = 1e-5,
-):
+    ):
     q = np.copy(q0)
     count_iter = 0
     for _ in range(max_ik_iter):
@@ -44,7 +43,7 @@ def poe_ik_dls_lm(
         max_ik_iter = 100,
         error_tol = 1e-5,
         damping = 1e-3,
-):
+    ):
     q = np.copy(q0)
     count_iter = 0
     for _ in range(max_ik_iter):
@@ -77,7 +76,8 @@ def poe_ik_dls_qp(
         error_tol = 1e-5,
         damping = 1e-3,
         qp_solver = "custom",
-):
+    ):
+    print("poe_ik_dls_qp")
     q = np.copy(q0)
     count_iter = 0
     for _ in range(max_ik_iter):
@@ -126,4 +126,7 @@ def poe_ik_dls_qp(
         if v is None:
             break
         q += twist_dt * v.flatten()
+    else:
+        count_iter = 0
+
     return q, count_iter

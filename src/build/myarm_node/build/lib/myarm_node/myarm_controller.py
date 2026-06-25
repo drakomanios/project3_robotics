@@ -5,8 +5,9 @@ import math
 from rclpy.node import Node
 from std_msgs.msg import String
 from myarm_node.myarm_utils.myarm_connect import connect
-from myarm_node.myarm_utils.SE3_utils import quat_to_rot
-from myarm_node.myarm_utils.solve_inv_kine import solve_ik
+# from myarm_node.myarm_utils.kinematics.SE3_utils import quat_to_rot
+from myarm_node.myarm_utils.fullpose_IK_solve_methods import poe_ik_dls_qp, poe_ik_dls_lm
+# from myarm_node.myarm_utils.poe_fkine import poe_fk
 from sensor_msgs.msg import JointState
 from geometry_msgs.msg import PoseStamped
 
@@ -37,130 +38,75 @@ class MyArmNode(Node):
         # Create myarm object
         self.myarm = connect(port, baudrate, 1.0)
 
-        # Create publisher and timer for the joint states
-        self.publisher_ = self.create_publisher(String, 'topic', 10)
-        timer_period = 0.5  # seconds
-        self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.i = 0
-
-    def timer_callback(self):
-        msg = String()
-        msg.data = 'Hello World: %d' % self.i
-        self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
-        self.i += 1
-
-        # Create subscription for the detected obstacle
-
-        self.q0_list = None
+        self.q0_list = np.zeros(7, dtype=np.float64)  # zero configuration in encoder counts
         self.last_x = 0.0
         self.last_y = 0.0
         self.last_z = 0.0
-    
-    def publish_myarm_state(self) -> None:
-        """
-        This function is periodically called by the timer. It publishes the current state (joint angles)
-        of the arm's joints to the /joint_states topic.
-        """
 
-        # Create message with time stamp
+        # Create publisher and timer for the joint states
+        self.publisher_ = self.create_publisher(JointState, '/joint_states', 10)
+        timer_period = 0.1  # seconds
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        
+        # Create subscription for the detected obstacle
+        self.subscriber = self.create_subscription(PoseStamped, '/detected_obstacle', self.obstacle_callback, 10)
+
+
+    def timer_callback(self):
         msg = JointState()
         msg.header.stamp = self.get_clock().now().to_msg()
-
-        # Set joint names
         msg.name = ["joint1", "joint2", "joint3", "joint4", "joint5", "joint6", "joint7"]
-
-        # Read the current positions of the joints (in degrees)
-        ############# ENTER CODE HERE ###################
-        
-        
-        #################################################
-       
-        # Convert the joint angles to radians
+        joint_angles = self.myarm.get_angles()
+        # print(f"Publishing joint angles: {joint_angles}")
         positions = []
-        for angle_deg in joint_angles_list:
-            angle_rad = round(math.radians(angle_deg), 3)
-            positions.append(angle_rad)
-
-        # Set joint positions
+        for angle in joint_angles:
+            positions.append(round(math.radians(angle),3))
         msg.position = positions
+        self.publisher_.publish(msg)
+        # self.get_logger().info('Publishing: "%s"' % msg.position)
+        # self.goto(0.2,0.,0.3)
 
-        # Publish the message
-        ############# ENTER CODE HERE ###################
-        
-        
-        #################################################
 
-    def follow_obstacle(self, msg: PoseStamped):
-        """
-        Control myarm to follow the detected obstacle.
-        The obstacle pose is transformed from lidar frame to myarm base frame.
-        """
+    def obstacle_callback(self, msg):
+        # Extract the position of the detected obstacle from the message
+        x = msg.pose.position.x
+        y = msg.pose.position.y
+        z = msg.pose.position.z
 
+        # Print the position of the detected obstacle
+        self.get_logger().info(f"Detected obstacle at: x={x}, y={y}, z={z}")
+
+        # Call the goto function to move the robot arm to the detected obstacle position
+        self.goto(x, y, 0.1)
+
+    
+    def goto(self, x, y, z):
         self.speed = self.get_parameter("speed").value
-
-        # Transform from lidar frame to myarm base (world) frame
-        try:
-            transform = self.tf_buffer.lookup_transform(
-                "myarm_base_frame",
-                msg.header.frame_id,
-                rclpy.time.Time(),
-                timeout = rclpy.duration.Duration(seconds = 0.1)
-            )
-        except tf2_ros.TransformException as e:
-            self.get_logger().error(f"TF lookup failed: {e}!")
-            return
-
-        # Translation of lidar frame origin expressed in myarm base (world) frame
-        t = transform.transform.translation
-        t_bl = np.array([t.x, t.y, t.z])
-
-        # Rotation of lidar frame expressed in myarm base (world) frame
-        rq = transform.transform.rotation
-        R_bl = quat_to_rot(np.array([rq.x, rq.y, rq.z, rq.w]))
-
-        # Obstacle's point in lidar frame
-        p_lidar = np.array([
-            msg.pose.position.x,
-            msg.pose.position.y,
-            msg.pose.position.z
-        ])
-
-        # Transform obstacle's point from lidar frame into myarm base (world) frame
-        ############# ENTER CODE HERE ###################
-        
-        
-        #################################################
-        posx_w, posy_w, posz_w = p_base
+        # if self.q0_list is not None:
+        #     self.myarm.send_angles(self.q0_list.tolist(), self.speed)
 
         # Build desired end-effector pose in myarm base (world) frame
-        ############# ENTER CODE HERE ###################
-        
-        
-        #################################################
- 
-        # Solve inverse kinematics
-        if abs(posx_w - self.last_x) > 0.015 or abs(posy_w - self.last_y) > 0.015 or abs(posz_w - self.last_z) > 0.015:
-            self.get_logger().info(f"{Twbd}")
-            self.get_logger().warn("Starting inverse kinematics ...")
-            q_rad, ik_success = solve_ik(Twbd, "space", self.q0_list, 1e-5)
+        Twbd = np.diag([1., -1., -1. ,1.])
+        Twbd[:, 3] = np.array([x, y, z, 1.])
+        print(Twbd)
 
-            if ik_success:
-                # Convert radians → degrees and send command to myarm
-                q_deg = [math.degrees(q) for q in q_rad]
-                self.myarm.send_angles(q_deg, self.speed)
-                self.q0_list = [np.copy(q_rad), np.array([-1.557, 1.177, -0.532, -1.209, 0.612, -0.940, -2.180])]
-                self.get_logger().info(f"SUCCESSFUL inverse kinematics! Found q = {np.round(q_deg, 2)} (degrees)")
-            else:
-                self.get_logger().info("FAILED inverse kinematics!")
-            
-            # Keep the last obstacle's position
-            self.last_x = posx_w
-            self.last_y = posy_w
-            self.last_z = posz_w
+        # Solve inverse kinematics
+        self.get_logger().warn("Starting inverse kinematics ...")
+        q_rad, ik_success = poe_ik_dls_qp(self.q0_list, Twbd, "space", "world", 1.5, 150, 1e-5, 1e-3, "custom")
+        # q_rad, ik_success = poe_ik_dls_lm(self.q0_list, Twbd, "space", "world", 50, 1e-2, 1e-2)
+
+        if 1:#ik_success:
+            # Convert radians to degrees and send command to myarm
+            q_deg = [round(math.degrees(q),4) for q in q_rad]
+            self.get_logger().info(f"SUCCESSFUL inverse kinematics! Found q = {np.round(q_deg, 2)} (degrees) \n sending command to myarm ...")
+            self.myarm.send_angles(q_deg, self.speed)
+            # self.q0_list = np.copy(q_rad) #, np.array([-1.557, 1.177, -0.532, -1.209, 0.612, -0.940, -2.180])]
+        if not ik_success: #else:
+            self.get_logger().info("FAILED inverse kinematics!")
 
 
 def main(args = None):
+    node = None
     try:
         rclpy.init(args = args)
         node = MyArmNode()

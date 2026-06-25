@@ -1,0 +1,140 @@
+[0.000000] (-) TimerEvent: {}
+[0.001541] (myarm_node) JobQueued: {'identifier': 'myarm_node', 'dependencies': OrderedDict()}
+[0.003525] (myarm_node) JobStarted: {'identifier': 'myarm_node'}
+[0.099078] (-) TimerEvent: {}
+[0.209949] (-) TimerEvent: {}
+[0.312865] (-) TimerEvent: {}
+[0.414434] (-) TimerEvent: {}
+[0.517438] (-) TimerEvent: {}
+[0.618323] (-) TimerEvent: {}
+[0.719481] (-) TimerEvent: {}
+[0.820969] (-) TimerEvent: {}
+[0.923133] (-) TimerEvent: {}
+[1.024564] (-) TimerEvent: {}
+[1.125738] (-) TimerEvent: {}
+[1.226985] (-) TimerEvent: {}
+[1.328271] (-) TimerEvent: {}
+[1.429522] (-) TimerEvent: {}
+[1.530950] (-) TimerEvent: {}
+[1.632232] (-) TimerEvent: {}
+[1.734159] (-) TimerEvent: {}
+[1.834982] (-) TimerEvent: {}
+[1.935787] (-) TimerEvent: {}
+[2.037853] (-) TimerEvent: {}
+[2.139090] (-) TimerEvent: {}
+[2.240587] (-) TimerEvent: {}
+[2.342586] (-) TimerEvent: {}
+[2.454620] (-) TimerEvent: {}
+[2.558861] (-) TimerEvent: {}
+[2.660144] (-) TimerEvent: {}
+[2.761802] (-) TimerEvent: {}
+[2.866446] (-) TimerEvent: {}
+[2.973069] (-) TimerEvent: {}
+[3.078004] (-) TimerEvent: {}
+[3.179098] (-) TimerEvent: {}
+[3.280435] (-) TimerEvent: {}
+[3.382530] (-) TimerEvent: {}
+[3.484589] (-) TimerEvent: {}
+[3.586567] (-) TimerEvent: {}
+[3.689693] (-) TimerEvent: {}
+[3.795518] (-) TimerEvent: {}
+[3.897380] (-) TimerEvent: {}
+[3.998173] (-) TimerEvent: {}
+[4.099247] (-) TimerEvent: {}
+[4.201184] (-) TimerEvent: {}
+[4.302412] (-) TimerEvent: {}
+[4.404387] (-) TimerEvent: {}
+[4.506105] (-) TimerEvent: {}
+[4.607054] (-) TimerEvent: {}
+[4.709200] (-) TimerEvent: {}
+[4.813224] (-) TimerEvent: {}
+[4.918211] (-) TimerEvent: {}
+[5.019094] (-) TimerEvent: {}
+[5.120439] (-) TimerEvent: {}
+[5.222723] (-) TimerEvent: {}
+[5.325285] (-) TimerEvent: {}
+[5.430313] (-) TimerEvent: {}
+[5.531316] (-) TimerEvent: {}
+[5.632559] (-) TimerEvent: {}
+[5.733479] (-) TimerEvent: {}
+[5.834672] (-) TimerEvent: {}
+[5.935743] (-) TimerEvent: {}
+[6.036723] (-) TimerEvent: {}
+[6.137917] (-) TimerEvent: {}
+[6.241223] (-) TimerEvent: {}
+[6.345610] (-) TimerEvent: {}
+[6.446886] (-) TimerEvent: {}
+[6.549039] (-) TimerEvent: {}
+[6.650063] (-) TimerEvent: {}
+[6.751295] (-) TimerEvent: {}
+[6.853376] (-) TimerEvent: {}
+[6.955377] (-) TimerEvent: {}
+[7.057016] (-) TimerEvent: {}
+[7.159757] (-) TimerEvent: {}
+[7.260750] (-) TimerEvent: {}
+[7.363082] (-) TimerEvent: {}
+[7.469287] (-) TimerEvent: {}
+[7.570458] (-) TimerEvent: {}
+[7.675632] (-) TimerEvent: {}
+[7.793157] (myarm_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/myarm_node', 'build', '--build-base', '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build', 'install', '--prefix', '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node', '--record', '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/install.log', '--single-version-externally-managed'], 'cwd': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/myarm_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'er', 'SSH_CLIENT': '192.168.0.174 64401 22', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/er/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'BROWSER': '/home/er/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/er', 'OLDPWD': '/home/er/project3_team5_robotic_systems_1/project3_robotics', 'TERM_PROGRAM_VERSION': '1.126.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-63c23049-45fc-4807-aafd-730ddcb9310c.sock', 'PYENV_SHELL': 'bash', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'appmenu-gtk-module', 'VSCODE_GIT_ASKPASS_MAIN': '/home/er/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/er/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'UBUNTU_MENUPROXY': '1', 'COLCON_PREFIX_PATH': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'er', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/er/.pyenv/shims:/home/er/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/bin/remote-cli:/home/er/.local/bin:/opt/ros/galactic/bin:/home/er/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'letter', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5cfaebb6f8.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node:/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.174 64401 192.168.0.134 22', 'PYENV_ROOT': '/home/er/.pyenv', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages:/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1'}, 'shell': False}
+[7.849635] (-) TimerEvent: {}
+[7.952200] (-) TimerEvent: {}
+[8.054240] (-) TimerEvent: {}
+[8.155596] (-) TimerEvent: {}
+[8.257466] (-) TimerEvent: {}
+[8.360939] (-) TimerEvent: {}
+[8.461874] (-) TimerEvent: {}
+[8.562808] (-) TimerEvent: {}
+[8.663927] (-) TimerEvent: {}
+[8.764959] (-) TimerEvent: {}
+[8.867502] (-) TimerEvent: {}
+[8.972021] (-) TimerEvent: {}
+[9.076748] (-) TimerEvent: {}
+[9.178300] (-) TimerEvent: {}
+[9.282565] (-) TimerEvent: {}
+[9.386269] (-) TimerEvent: {}
+[9.491211] (-) TimerEvent: {}
+[9.593158] (-) TimerEvent: {}
+[9.694774] (-) TimerEvent: {}
+[9.795701] (-) TimerEvent: {}
+[9.896672] (-) TimerEvent: {}
+[9.997643] (-) TimerEvent: {}
+[10.098616] (-) TimerEvent: {}
+[10.199708] (-) TimerEvent: {}
+[10.300842] (-) TimerEvent: {}
+[10.401841] (-) TimerEvent: {}
+[10.502755] (-) TimerEvent: {}
+[10.603717] (-) TimerEvent: {}
+[10.705064] (-) TimerEvent: {}
+[10.750933] (myarm_node) StdoutLine: {'line': b'running egg_info\n'}
+[10.755030] (myarm_node) StdoutLine: {'line': b'writing ../build/myarm_node/myarm_node.egg-info/PKG-INFO\n'}
+[10.756724] (myarm_node) StdoutLine: {'line': b'writing dependency_links to ../build/myarm_node/myarm_node.egg-info/dependency_links.txt\n'}
+[10.759055] (myarm_node) StdoutLine: {'line': b'writing entry points to ../build/myarm_node/myarm_node.egg-info/entry_points.txt\n'}
+[10.760259] (myarm_node) StdoutLine: {'line': b'writing requirements to ../build/myarm_node/myarm_node.egg-info/requires.txt\n'}
+[10.761332] (myarm_node) StdoutLine: {'line': b'writing top-level names to ../build/myarm_node/myarm_node.egg-info/top_level.txt\n'}
+[10.805305] (-) TimerEvent: {}
+[10.906353] (-) TimerEvent: {}
+[10.980496] (myarm_node) StdoutLine: {'line': b"reading manifest file '../build/myarm_node/myarm_node.egg-info/SOURCES.txt'\n"}
+[10.988360] (myarm_node) StdoutLine: {'line': b"writing manifest file '../build/myarm_node/myarm_node.egg-info/SOURCES.txt'\n"}
+[10.990153] (myarm_node) StdoutLine: {'line': b'running build\n'}
+[10.990921] (myarm_node) StdoutLine: {'line': b'running build_py\n'}
+[11.006591] (-) TimerEvent: {}
+[11.008467] (myarm_node) StdoutLine: {'line': b'running install\n'}
+[11.011444] (myarm_node) StdoutLine: {'line': b'running install_lib\n'}
+[11.024231] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils/kinematics/parameters.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/kinematics\n'}
+[11.036747] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/kinematics/parameters.py to parameters.cpython-38.pyc\n'}
+[11.049672] (myarm_node) StdoutLine: {'line': b'running install_data\n'}
+[11.053853] (myarm_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.065389] (myarm_node) StdoutLine: {'line': b"removing '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[11.068853] (myarm_node) StdoutLine: {'line': b'Copying ../build/myarm_node/myarm_node.egg-info to /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node-0.0.0-py3.8.egg-info\n'}
+[11.083385] (myarm_node) StdoutLine: {'line': b'running install_scripts\n'}
+[11.108361] (-) TimerEvent: {}
+[11.204911] (myarm_node) StdoutLine: {'line': b'Installing controller script to /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/myarm_node\n'}
+[11.208644] (-) TimerEvent: {}
+[11.211497] (myarm_node) StdoutLine: {'line': b"writing list of installed files to '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/install.log'\n"}
+[11.308989] (-) TimerEvent: {}
+[11.406077] (myarm_node) CommandEnded: {'returncode': 0}
+[11.414926] (-) TimerEvent: {}
+[11.516030] (-) TimerEvent: {}
+[11.561705] (myarm_node) JobEnded: {'identifier': 'myarm_node', 'rc': 0}
+[11.568149] (-) EventReactorShutdown: {}

@@ -1,0 +1,166 @@
+[0.000000] (-) TimerEvent: {}
+[0.002086] (myarm_node) JobQueued: {'identifier': 'myarm_node', 'dependencies': OrderedDict()}
+[0.003585] (myarm_node) JobStarted: {'identifier': 'myarm_node'}
+[0.100974] (-) TimerEvent: {}
+[0.206128] (-) TimerEvent: {}
+[0.310225] (-) TimerEvent: {}
+[0.411771] (-) TimerEvent: {}
+[0.514611] (-) TimerEvent: {}
+[0.616549] (-) TimerEvent: {}
+[0.717972] (-) TimerEvent: {}
+[0.820134] (-) TimerEvent: {}
+[0.921647] (-) TimerEvent: {}
+[1.024088] (-) TimerEvent: {}
+[1.132369] (-) TimerEvent: {}
+[1.239018] (-) TimerEvent: {}
+[1.341121] (-) TimerEvent: {}
+[1.442844] (-) TimerEvent: {}
+[1.544422] (-) TimerEvent: {}
+[1.646271] (-) TimerEvent: {}
+[1.748326] (-) TimerEvent: {}
+[1.849851] (-) TimerEvent: {}
+[1.952085] (-) TimerEvent: {}
+[2.053664] (-) TimerEvent: {}
+[2.155093] (-) TimerEvent: {}
+[2.256679] (-) TimerEvent: {}
+[2.358670] (-) TimerEvent: {}
+[2.470783] (-) TimerEvent: {}
+[2.572385] (-) TimerEvent: {}
+[2.674185] (-) TimerEvent: {}
+[2.776125] (-) TimerEvent: {}
+[2.879631] (-) TimerEvent: {}
+[2.983495] (-) TimerEvent: {}
+[3.085719] (-) TimerEvent: {}
+[3.187201] (-) TimerEvent: {}
+[3.292327] (-) TimerEvent: {}
+[3.398633] (-) TimerEvent: {}
+[3.500026] (-) TimerEvent: {}
+[3.600951] (-) TimerEvent: {}
+[3.701993] (-) TimerEvent: {}
+[3.803483] (-) TimerEvent: {}
+[3.904403] (-) TimerEvent: {}
+[4.005373] (-) TimerEvent: {}
+[4.106513] (-) TimerEvent: {}
+[4.208609] (-) TimerEvent: {}
+[4.311864] (-) TimerEvent: {}
+[4.413769] (-) TimerEvent: {}
+[4.522812] (-) TimerEvent: {}
+[4.623709] (-) TimerEvent: {}
+[4.724748] (-) TimerEvent: {}
+[4.826952] (-) TimerEvent: {}
+[4.929266] (-) TimerEvent: {}
+[5.044189] (-) TimerEvent: {}
+[5.145613] (-) TimerEvent: {}
+[5.251165] (-) TimerEvent: {}
+[5.353909] (-) TimerEvent: {}
+[5.460144] (-) TimerEvent: {}
+[5.561839] (-) TimerEvent: {}
+[5.666555] (-) TimerEvent: {}
+[5.767971] (-) TimerEvent: {}
+[5.869250] (-) TimerEvent: {}
+[5.974008] (-) TimerEvent: {}
+[6.077477] (-) TimerEvent: {}
+[6.180419] (-) TimerEvent: {}
+[6.282436] (-) TimerEvent: {}
+[6.384025] (-) TimerEvent: {}
+[6.488653] (-) TimerEvent: {}
+[6.595200] (-) TimerEvent: {}
+[6.697889] (-) TimerEvent: {}
+[6.799026] (-) TimerEvent: {}
+[6.901429] (-) TimerEvent: {}
+[7.004727] (-) TimerEvent: {}
+[7.109402] (-) TimerEvent: {}
+[7.214437] (-) TimerEvent: {}
+[7.316511] (-) TimerEvent: {}
+[7.419638] (-) TimerEvent: {}
+[7.521830] (-) TimerEvent: {}
+[7.623302] (-) TimerEvent: {}
+[7.726280] (-) TimerEvent: {}
+[7.833599] (-) TimerEvent: {}
+[7.937429] (-) TimerEvent: {}
+[8.015098] (myarm_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/myarm_node', 'build', '--build-base', '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build', 'install', '--prefix', '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node', '--record', '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/install.log', '--single-version-externally-managed'], 'cwd': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/myarm_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'er', 'SSH_CLIENT': '192.168.0.174 64401 22', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/er/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'BROWSER': '/home/er/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/er', 'OLDPWD': '/home/er/project3_team5_robotic_systems_1/project3_robotics', 'TERM_PROGRAM_VERSION': '1.126.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-63c23049-45fc-4807-aafd-730ddcb9310c.sock', 'PYENV_SHELL': 'bash', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'appmenu-gtk-module', 'VSCODE_GIT_ASKPASS_MAIN': '/home/er/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/er/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'UBUNTU_MENUPROXY': '1', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'er', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/er/.pyenv/shims:/home/er/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/bin/remote-cli:/home/er/.local/bin:/opt/ros/galactic/bin:/home/er/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'letter', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5cfaebb6f8.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.174 64401 192.168.0.134 22', 'PYENV_ROOT': '/home/er/.pyenv', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1'}, 'shell': False}
+[8.045348] (-) TimerEvent: {}
+[8.153175] (-) TimerEvent: {}
+[8.254161] (-) TimerEvent: {}
+[8.355382] (-) TimerEvent: {}
+[8.460334] (-) TimerEvent: {}
+[8.563183] (-) TimerEvent: {}
+[8.664608] (-) TimerEvent: {}
+[8.765991] (-) TimerEvent: {}
+[8.867067] (-) TimerEvent: {}
+[8.968315] (-) TimerEvent: {}
+[9.069648] (-) TimerEvent: {}
+[9.171248] (-) TimerEvent: {}
+[9.272126] (-) TimerEvent: {}
+[9.373019] (-) TimerEvent: {}
+[9.473936] (-) TimerEvent: {}
+[9.575823] (-) TimerEvent: {}
+[9.678509] (-) TimerEvent: {}
+[9.787377] (-) TimerEvent: {}
+[9.888258] (-) TimerEvent: {}
+[9.989182] (-) TimerEvent: {}
+[10.090534] (-) TimerEvent: {}
+[10.194476] (-) TimerEvent: {}
+[10.299364] (-) TimerEvent: {}
+[10.403015] (-) TimerEvent: {}
+[10.504159] (-) TimerEvent: {}
+[10.563895] (myarm_node) StdoutLine: {'line': b'running egg_info\n'}
+[10.568381] (myarm_node) StdoutLine: {'line': b'writing ../build/myarm_node/myarm_node.egg-info/PKG-INFO\n'}
+[10.570748] (myarm_node) StdoutLine: {'line': b'writing dependency_links to ../build/myarm_node/myarm_node.egg-info/dependency_links.txt\n'}
+[10.572063] (myarm_node) StdoutLine: {'line': b'writing entry points to ../build/myarm_node/myarm_node.egg-info/entry_points.txt\n'}
+[10.573060] (myarm_node) StdoutLine: {'line': b'writing requirements to ../build/myarm_node/myarm_node.egg-info/requires.txt\n'}
+[10.574668] (myarm_node) StdoutLine: {'line': b'writing top-level names to ../build/myarm_node/myarm_node.egg-info/top_level.txt\n'}
+[10.604578] (-) TimerEvent: {}
+[10.706360] (-) TimerEvent: {}
+[10.807207] (-) TimerEvent: {}
+[10.871573] (myarm_node) StdoutLine: {'line': b"reading manifest file '../build/myarm_node/myarm_node.egg-info/SOURCES.txt'\n"}
+[10.885832] (myarm_node) StdoutLine: {'line': b"writing manifest file '../build/myarm_node/myarm_node.egg-info/SOURCES.txt'\n"}
+[10.889342] (myarm_node) StdoutLine: {'line': b'running build\n'}
+[10.891194] (myarm_node) StdoutLine: {'line': b'running build_py\n'}
+[10.893109] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_controller.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node\n'}
+[10.895245] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/fullpose_IK_solve_methods.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[10.897655] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/poe_ikine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[10.900115] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/position_IK_solve_methods.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[10.901471] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/solve_inv_kine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils\n'}
+[10.905728] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils/QP_solver\n'}
+[10.906822] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/QP_solver/general_utils.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils/QP_solver\n'}
+[10.907684] (-) TimerEvent: {}
+[10.909176] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/QP_solver/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils/QP_solver\n'}
+[10.913136] (myarm_node) StdoutLine: {'line': b'copying myarm_node/myarm_utils/QP_solver/QP.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils/QP_solver\n'}
+[10.922667] (myarm_node) StdoutLine: {'line': b'running install\n'}
+[10.925064] (myarm_node) StdoutLine: {'line': b'running install_lib\n'}
+[10.931985] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_controller.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node\n'}
+[10.938925] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils/fullpose_IK_solve_methods.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils\n'}
+[10.939800] (myarm_node) StdoutLine: {'line': b'creating /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/QP_solver\n'}
+[10.944438] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils/QP_solver/general_utils.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/QP_solver\n'}
+[10.947348] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils/QP_solver/__init__.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/QP_solver\n'}
+[10.948481] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils/QP_solver/QP.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/QP_solver\n'}
+[10.949738] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils/poe_ikine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils\n'}
+[10.951297] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils/SE3_utils.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils\n'}
+[10.952178] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils/position_IK_solve_methods.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils\n'}
+[10.953242] (myarm_node) StdoutLine: {'line': b'copying /home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/build/lib/myarm_node/myarm_utils/solve_inv_kine.py -> /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils\n'}
+[10.955953] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_controller.py to myarm_controller.cpython-38.pyc\n'}
+[10.974962] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/fullpose_IK_solve_methods.py to fullpose_IK_solve_methods.cpython-38.pyc\n'}
+[10.982378] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/QP_solver/general_utils.py to general_utils.cpython-38.pyc\n'}
+[10.987221] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/QP_solver/__init__.py to __init__.cpython-38.pyc\n'}
+[10.988557] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/QP_solver/QP.py to QP.cpython-38.pyc\n'}
+[11.008497] (-) TimerEvent: {}
+[11.015411] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/poe_ikine.py to poe_ikine.cpython-38.pyc\n'}
+[11.021650] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/SE3_utils.py to SE3_utils.cpython-38.pyc\n'}
+[11.028359] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/position_IK_solve_methods.py to position_IK_solve_methods.cpython-38.pyc\n'}
+[11.032740] (myarm_node) StdoutLine: {'line': b'byte-compiling /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node/myarm_utils/solve_inv_kine.py to solve_inv_kine.cpython-38.pyc\n'}
+[11.035777] (myarm_node) StdoutLine: {'line': b'running install_data\n'}
+[11.040975] (myarm_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.061596] (myarm_node) StdoutLine: {'line': b"removing '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[11.063975] (myarm_node) StdoutLine: {'line': b'Copying ../build/myarm_node/myarm_node.egg-info to /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/python3.8/site-packages/myarm_node-0.0.0-py3.8.egg-info\n'}
+[11.073061] (myarm_node) StdoutLine: {'line': b'running install_scripts\n'}
+[11.108709] (-) TimerEvent: {}
+[11.188737] (myarm_node) StdoutLine: {'line': b'Installing controller script to /home/er/project3_team5_robotic_systems_1/project3_robotics/src/install/myarm_node/lib/myarm_node\n'}
+[11.195580] (myarm_node) StdoutLine: {'line': b"writing list of installed files to '/home/er/project3_team5_robotic_systems_1/project3_robotics/src/build/myarm_node/install.log'\n"}
+[11.209505] (-) TimerEvent: {}
+[11.317186] (-) TimerEvent: {}
+[11.408081] (myarm_node) CommandEnded: {'returncode': 0}
+[11.425889] (-) TimerEvent: {}
+[11.527569] (-) TimerEvent: {}
+[11.602703] (myarm_node) JobEnded: {'identifier': 'myarm_node', 'rc': 0}
+[11.607377] (-) EventReactorShutdown: {}

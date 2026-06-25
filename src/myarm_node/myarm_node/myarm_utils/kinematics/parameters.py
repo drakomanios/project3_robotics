@@ -59,9 +59,10 @@ qdot_lb = np.deg2rad([-np.pi/2, -np.pi/2, -np.pi/2, -np.pi/2, -np.pi/2, -np.pi/2
 qdot_ub = np.deg2rad([np.pi/2, np.pi/2, np.pi/2, np.pi/2, np.pi/2, np.pi/2, np.pi/2])  # joint speed upper bounds in rad/sec
 
 # T_world->space or T_world->base
-z_rotation = np.deg2rad(0.0)
-translation = np.array([0.5, 0.5, 0.0])
+z_rotation = np.deg2rad(180)
+translation = np.array([-0.06, 0.15, 0.0])
 Tws = np.array([[np.cos(z_rotation), -np.sin(z_rotation), 0.0, translation[0]],
                 [np.sin(z_rotation), np.cos(z_rotation), 0.0, translation[1]],
                 [0.0, 0.0, 1.0, translation[2]],
                 [0.0, 0.0, 0.0, 1.0]])
+
