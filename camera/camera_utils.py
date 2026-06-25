@@ -1,6 +1,7 @@
 import numpy as np
 import cv2
 import os, glob
+import json
 
 
 # some typical ArUco markers dictionaries
@@ -72,6 +73,7 @@ def calibrate_camera(calibration_images_path):
     image_points = []  # initialize the image plane 2d points
     # calibrate the camera looping through all the images with the chessboard pattern
     images = glob.glob(calibration_images_path)  # load the images that contain the chessboard pattern in different poses for the calibration
+    print(images)
     if len(images) != 0:  # if there are images to calibrate the camera
         print(f"Number of images for camera calibration: {len(images)}")  # print the number of images used for the camera calibration
         for img in images:  # loop through the images to calibrate the camera
@@ -105,9 +107,9 @@ def capture_calibration_images(folder_name):
         os.makedirs(folder_name)
 
     # camera configuration (Ubuntu / OpenCV)
-    camera_resolution = 480
+    camera_resolution = 720
     camera_aspect_ratio = 4/3
-    cap = cv2.VideoCapture(0)   # external camera (0 if needed)
+    cap = cv2.VideoCapture(1)   # external camera (0 if needed)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, camera_resolution)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, int(camera_aspect_ratio * camera_resolution))
 
@@ -174,3 +176,26 @@ def estimate_ArUco_marker_pose(image, ArUco_marker, intrinsic_mat, dist_coeffs):
         else:  # if no markers are detected
             print("No ArUco marker detected.")
             return np.eye(4), image  # return None for the ArUco marker transformation matrix and the image with the detected markers and their poses
+
+
+def get_intrinsic_parameters():
+    cwd = os.getcwd()
+
+    with open(
+        os.path.join(cwd, "assets/camera/camera_params_720.json"),
+        "r"
+    ) as f:
+        params = json.load(f)
+
+    # params = params["camera_parameters"]["4"]
+
+    intrinsic_matrix = np.array(
+        params["camera_matrix"],
+        dtype=np.float64
+    )
+    dist_coeffs = np.array(
+        params["dist_coeffs"],
+        dtype=np.float64
+    )
+
+    return intrinsic_matrix , dist_coeffs

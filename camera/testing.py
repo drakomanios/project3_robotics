@@ -3,7 +3,6 @@ import numpy as np
 import json
 import os
 
-
 CUBE_SIZE = 0.024 #in meters
 CAMERA_RESOLUTION = 480
 ASPECT_RATIO = 1.3334
