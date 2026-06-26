@@ -14,6 +14,7 @@ myarm_node/py.typed
 myarm_node/myarm_utils/__init__.py
 myarm_node/myarm_utils/fullpose_IK_solve_methods.py
 myarm_node/myarm_utils/myarm_connect.py
+myarm_node/myarm_utils/poe_fkine.py
 myarm_node/myarm_utils/poe_ikine.py
 myarm_node/myarm_utils/position_IK_solve_methods.py
 myarm_node/myarm_utils/solve_inv_kine.py

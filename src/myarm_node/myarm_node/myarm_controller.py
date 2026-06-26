@@ -1,5 +1,6 @@
 import rclpy
 import tf2_ros
+import time
 import numpy as np
 import math
 from rclpy.node import Node
@@ -9,6 +10,7 @@ from myarm_node.myarm_utils.myarm_connect import connect
 from myarm_node.myarm_utils.fullpose_IK_solve_methods import poe_ik_dls_qp, poe_ik_dls_lm
 # from myarm_node.myarm_utils.poe_fkine import poe_fk
 from sensor_msgs.msg import JointState
+from std_msgs.msg import String
 from geometry_msgs.msg import PoseStamped
 
 
@@ -38,18 +40,21 @@ class MyArmNode(Node):
         # Create myarm object
         self.myarm = connect(port, baudrate, 1.0)
 
-        self.q0_list = np.zeros(7, dtype=np.float64)  # zero configuration in encoder counts
+        self.q0_list = np.zeros(7, dtype=np.float64)
         self.last_x = 0.0
         self.last_y = 0.0
         self.last_z = 0.0
 
-        # Create publisher and timer for the joint states
         self.publisher_ = self.create_publisher(JointState, '/joint_states', 10)
         timer_period = 0.1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         
-        # Create subscription for the detected obstacle
         self.subscriber = self.create_subscription(PoseStamped, '/detected_obstacle', self.obstacle_callback, 10)
+
+        self.relay_publisher = self.create_publisher(String , '/relay_command', 10)
+
+        self.has_caught = False
+        self.can_catch = True
 
 
     def timer_callback(self):
@@ -80,13 +85,12 @@ class MyArmNode(Node):
         self.get_logger().info(f"Detected obstacle at: x={x}, y={y}, z={z}")
 
         # Call the goto function to move the robot arm to the detected obstacle position
-        self.goto(x, y, 0.1)
+        self.goto(x, y, 0.07)
+        self.catch(x,y,0.02,0.02)
 
     
     def goto(self, x, y, z):
-        self.speed = self.get_parameter("speed").value
-        # if self.q0_list is not None:
-        #     self.myarm.send_angles(self.q0_list.tolist(), self.speed)
+        self.q0_list = np.zeros(7, dtype=np.float64)
 
         # Build desired end-effector pose in myarm base (world) frame
         Twbd = np.diag([1., -1., -1. ,1.])
@@ -98,15 +102,31 @@ class MyArmNode(Node):
         q_rad, ik_success = poe_ik_dls_qp(self.q0_list, Twbd, "space", "world", 1.5, 150, 1e-5, 1e-3, "custom")
         # q_rad, ik_success = poe_ik_dls_lm(self.q0_list, Twbd, "space", "world", 50, 1e-2, 1e-2)
 
-        if 1:#ik_success:
+        if ik_success:
             # Convert radians to degrees and send command to myarm
             q_deg = [round(math.degrees(q),4) for q in q_rad]
             self.get_logger().info(f"SUCCESSFUL inverse kinematics! Found q = {np.round(q_deg, 2)} (degrees) \n sending command to myarm ...")
             self.myarm.send_angles(q_deg, self.speed)
-            # self.q0_list = np.copy(q_rad) #, np.array([-1.557, 1.177, -0.532, -1.209, 0.612, -0.940, -2.180])]
-        if not ik_success: #else:
-            self.get_logger().info("FAILED inverse kinematics!")
+            time.sleep(1)
+            self.can_catch = True
+        else:
+            self.get_logger().info("inverse kinematics reached maximum iteration!")
+            q_deg = [round(math.degrees(q),4) for q in q_rad]
+            self.get_logger().info("retrying from a closer initial position")
+            self.myarm.send_angles(q_deg, self.speed)
+            self.q0_list = np.copy(q_rad)
 
+    def catch(self,x,y,z,max_descent):
+        if self.can_catch:
+            msg = String()
+            msg.data = "catch"
+            self.relay_publisher.publish(msg)
+            self.goto(x,y,z-max_descent)
+            self.can_catch = False
+            self.goto(0,0,0)
+            msg.data = "release"
+            self.relay_publisher.publish(msg)
+            time.sleep(1)
 
 def main(args = None):
     node = None
