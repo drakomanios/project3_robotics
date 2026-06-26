@@ -107,7 +107,7 @@ def capture_calibration_images(folder_name):
     # camera configuration (Ubuntu / OpenCV)
     camera_resolution = 480
     camera_aspect_ratio = 4/3
-    cap = cv2.VideoCapture(0)   # external camera (0 if needed)
+    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)   # external camera (0 if needed)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, camera_resolution)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, int(camera_aspect_ratio * camera_resolution))
 
