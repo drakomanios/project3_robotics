@@ -85,8 +85,8 @@ class MyArmNode(Node):
         self.get_logger().info(f"Detected obstacle at: x={x}, y={y}, z={z}")
 
         # Call the goto function to move the robot arm to the detected obstacle position
-        self.goto(x, y, 0.07)
-        self.catch(x,y,0.02,0.02)
+        self.goto(-x, -y, 0.05)
+        # self.catch(-x,-y,0.07,0.04)
 
     
     def goto(self, x, y, z):
@@ -99,12 +99,12 @@ class MyArmNode(Node):
 
         # Solve inverse kinematics
         self.get_logger().warn("Starting inverse kinematics ...")
-        q_rad, ik_success = poe_ik_dls_qp(self.q0_list, Twbd, "space", "world", 1.5, 150, 1e-5, 1e-3, "custom")
+        q_rad, ik_success = poe_ik_dls_qp(self.q0_list, Twbd, "space", "world", 1.3, 200, 1e-4, 1e-3, "custom")
         # q_rad, ik_success = poe_ik_dls_lm(self.q0_list, Twbd, "space", "world", 50, 1e-2, 1e-2)
 
         if ik_success:
             # Convert radians to degrees and send command to myarm
-            q_deg = [round(math.degrees(q),4) for q in q_rad]
+            q_deg = [round(math.degrees(q),3) for q in q_rad]
             self.get_logger().info(f"SUCCESSFUL inverse kinematics! Found q = {np.round(q_deg, 2)} (degrees) \n sending command to myarm ...")
             self.myarm.send_angles(q_deg, self.speed)
             time.sleep(1)
@@ -112,9 +112,9 @@ class MyArmNode(Node):
         else:
             self.get_logger().info("inverse kinematics reached maximum iteration!")
             q_deg = [round(math.degrees(q),4) for q in q_rad]
-            self.get_logger().info("retrying from a closer initial position")
-            self.myarm.send_angles(q_deg, self.speed)
-            self.q0_list = np.copy(q_rad)
+            # self.get_logger().info("retrying from a closer initial position")
+            # self.myarm.send_angles(q_deg, self.speed)
+            # self.q0_list = np.copy(q_rad)
 
     def catch(self,x,y,z,max_descent):
         if self.can_catch:
@@ -123,7 +123,7 @@ class MyArmNode(Node):
             self.relay_publisher.publish(msg)
             self.goto(x,y,z-max_descent)
             self.can_catch = False
-            self.goto(0,0,0)
+            self.goto(0,0,0.8)
             msg.data = "release"
             self.relay_publisher.publish(msg)
             time.sleep(1)
