@@ -1,5 +1,5 @@
 import numpy as np
-from myarm_node.myarm_utils.poe_fkine import poe_fk
+from myarm_node.myarm_utils.kinematics.poe_fkine import poe_fk
 from myarm_node.myarm_utils.kinematics.poe_diffkine import jacobian
 from myarm_node.myarm_utils.kinematics.poe_idiffkine import inverse_jacobian
 from myarm_node.myarm_utils.kinematics.SE3_functions import Log
@@ -98,9 +98,14 @@ def poe_ik_dls_qp(
         JT = J.T
 
         robot_joints = J.shape[1]
+        W = np.diag([
+            2.0, 2.0, 4.0, 1.0, 1.0, 0.01   
+        ])
 
-        Q = JT @ J + damping**2 * np.eye(robot_joints)
-        q_qp = -JT @ Vb
+        Q = JT @ W @ J + damping**2 * np.eye(robot_joints)
+        q_qp = -JT @ W @ Vb
+        # Q = JT @ J + damping**2 * np.eye(robot_joints)
+        # q_qp = -JT @ Vb
 
         C = np.vstack([twist_dt*np.eye(robot_joints),
                      -twist_dt*np.eye(robot_joints),
@@ -116,25 +121,25 @@ def poe_ik_dls_qp(
         # Cartesian workspace constraints
         # --------------------------------------------------
         # Workspace limits (meters)
-        x_min, x_max = -0.4, 0.40
-        y_min, y_max = -0.30, 0.30
-        z_min, z_max = 0.04, 0.60
-        T = poe_fk(q, frame_in, frame_ref)
-        p = T[:3, 3]
+        # x_min, x_max = -0.4, 0.40
+        # y_min, y_max = -0.30, 0.30
+        # z_min, z_max = 0.04, 0.60
+        # T = poe_fk(q, frame_in, frame_ref)
+        # p = T[:3, 3]
 
-        # If your Jacobian is [ω; v], change this to J[3:, :]
-        Jp = J[:3, :]
-        C_box = np.vstack([
-            twist_dt * Jp,
-            -twist_dt * Jp
-        ])
+        # # If your Jacobian is [ω; v], change this to J[3:, :]
+        # Jp = J[:3, :]
+        # C_box = np.vstack([
+        #     twist_dt * Jp,
+        #     -twist_dt * Jp
+        # ])
 
-        d_box = np.concatenate([
-            np.array([x_max, y_max, z_max]) - p,
-            p - np.array([x_min, y_min, z_min])
-        ])
-        C = np.vstack([C, C_box])
-        d = np.concatenate([d, d_box])
+        # d_box = np.concatenate([
+        #     np.array([x_max, y_max, z_max]) - p,
+        #     p - np.array([x_min, y_min, z_min])
+        # ])
+        # C = np.vstack([C, C_box])
+        # d = np.concatenate([d, d_box])
         qp = QP(Q,q_qp,C=C,d=d)
 
         if qp_solver == "custom":  # solve with our solver

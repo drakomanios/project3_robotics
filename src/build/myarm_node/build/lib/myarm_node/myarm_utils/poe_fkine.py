@@ -1,8 +1,8 @@
 import numpy as np
 from scipy.stats import qmc
-from .SE3_functions import hat, exp, Log
-from .parameters import screws, Tws, Tsb, q_lb, q_ub
-from .general_utils import generate_random_samples
+from .kinematics.SE3_functions import hat, exp, Log
+from .kinematics.parameters import screws, Tws, Tsb, q_lb, q_ub
+from .kinematics.general_utils import generate_random_samples
 
 
 def poe_fk(q, frame_in = "space", frame_ref = "world"):

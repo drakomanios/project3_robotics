@@ -1,11 +1,11 @@
 import numpy as np
-from .kinematics.poe_fkine import poe_fk
-from .kinematics.poe_diffkine import jacobian
-from .kinematics.poe_idiffkine import inverse_jacobian
-from .kinematics.SE3_functions import Log
-from .kinematics.parameters import q_lb, q_ub
-from .kinematics.parameters import N, screws, Tws, Tsb, q_lb, q_ub, qdot_lb, qdot_ub
-from .QP_solver.QP import QP
+from kinematics.poe_fkine import poe_fk
+from kinematics.poe_diffkine import jacobian
+from kinematics.poe_idiffkine import inverse_jacobian
+from kinematics.SE3_functions import Log
+from kinematics.parameters import q_lb, q_ub
+from kinematics.parameters import N, screws, Tws, Tsb, q_lb, q_ub, qdot_lb, qdot_ub
+from QP_solver.QP import QP
 
 def poe_ik_newton(
         q0,

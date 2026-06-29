@@ -5,3 +5,4 @@ src/log
 src/build
 src/install
 *.pyc
+.venv

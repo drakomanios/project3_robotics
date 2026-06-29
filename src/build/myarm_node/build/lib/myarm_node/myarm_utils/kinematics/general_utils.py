@@ -1,8 +1,8 @@
 import time
 import numpy as np
 from scipy.stats import qmc
-# from poe_fkine import poe_fk
-from .parameters import N, screws, Tws, Tsb, q_lb, q_ub
+from kinematics.poe_fkine import poe_fk
+from kinematics.parameters import N, screws, Tws, Tsb, q_lb, q_ub
 
 
 # generate random samples following a defined random distribution
